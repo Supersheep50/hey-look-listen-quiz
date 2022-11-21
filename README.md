@@ -102,6 +102,7 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Media
 
+- Background photo - Creative Bloc - https://www.creativebloq.com/news/top-video-game-character
 - The photos used on the home and sign up page are from This Open Source site
 - The images used for the gallery page were taken from this other open source site
 
