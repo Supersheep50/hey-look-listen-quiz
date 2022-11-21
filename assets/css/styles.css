@@ -1,4 +1,11 @@
-body {
+body {}
 
-    background-color: red;
+
+
+/** Background Photo **/
+.background-photo {
+
+    background: url(../images/video-game-background.png);
+    width: 100%;
+    background-position: center;
 }
