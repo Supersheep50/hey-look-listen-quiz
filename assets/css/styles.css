@@ -54,4 +54,28 @@ body {
     background-position: center;
 }
 
+
+/** Question Box (some code used here from Love Maths Project) **/
+
+.game-box {
+    background-color: #4acfee;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+
 /** HLL Photo 1 **/
+
+.hll-photo-1 {
+
+    background: url(../images/hll-photo-1.jpeg);
+    width: 100%;
+    height: 550px;
+    background-position: center;
+}
