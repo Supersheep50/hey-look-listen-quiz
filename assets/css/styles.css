@@ -21,21 +21,13 @@ h1 {
 
 }
 
-.hll-header {
-    background-color: #ffffff;
-    width: 30%;
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 400px;
-
-}
-
 /** Nav Bar & logo (Similiar code to previous project) **/
 
 .logo {
     height: 100px;
     margin-left: 20px;
     display: flex;
+
 }
 
 .nav-bar {
@@ -100,13 +92,24 @@ h1 {
 
 /** HLL Photos **/
 
-.hll-photo-1 {
+.about {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    background-color: gold;
+    font-size: xx-large;
+    font-weight: bolder;
+}
 
-    background: url(../images/hll-photo-1.jpeg);
-    width: 100%;
-    height: 1150px;
-    background-position: right;
-    background-repeat: no-repeat;
+.about-photo {
+    display: inline-flex;
+    flex-direction: row;
+    width: 50%;
 }
 
 .hll-photo-2 {
@@ -116,6 +119,7 @@ h1 {
     height: 1250px;
     background-position: left;
     background-repeat: no-repeat;
+    text-align: right;
 }
 
 .hll-photo-3 {
