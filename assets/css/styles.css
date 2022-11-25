@@ -3,6 +3,7 @@ body {
 
     margin: auto;
     padding: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 
@@ -104,14 +105,12 @@ h1 {
     background-color: #ffffff;
     font-size: xx-large;
     font-weight: bolder;
-    
 
 }
 
 .about-p {
-    border: navy 4px solid;
-    border-radius: 500px;
-    text-align: left;
+
+    text-align: center;
 }
 
 .about-photo {
@@ -140,6 +139,10 @@ h1 {
     flex-direction: row-reverse;
     width: 50%;
     height: 750px;
+}
+
+.rules-p {
+    text-align: center;
 }
 
 .faq {
