@@ -302,3 +302,11 @@ h1 {
         max-height: 100%;
     }
 }
+
+@media screen and (max-width:550px) {
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
