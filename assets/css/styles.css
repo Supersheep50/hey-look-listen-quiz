@@ -9,14 +9,12 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-
 body {
 
     background-color: gold;
 }
 
 /** Header & Banner **/
-
 h1 {
     background-color: #ffffff;
     margin: auto;
@@ -27,7 +25,6 @@ h1 {
 }
 
 /** Nav Bar & logo (Similiar code to previous project) **/
-
 .logo {
     height: 200px;
     display: flex;
@@ -81,9 +78,7 @@ h1 {
     margin-bottom: 150px;
 }
 
-
 /** Question Box (some code used here from Love Maths Project) **/
-
 .game-box {
     background-color: #4acfee;
     box-sizing: border-box;
@@ -102,7 +97,6 @@ h1 {
 }
 
 /** Button Styling - Some code used from Love Maths **/
-
 .btn {
     width: 220px;
     height: 60px;
@@ -116,13 +110,11 @@ h1 {
 }
 
 /** Question Box **/
-
 .question-box {
     font-size: x-large;
 }
 
 /** Answer Box **/
-
 .answer-box {
     font-size: x-large;
 }
@@ -133,7 +125,6 @@ h1 {
 }
 
 /** Your Score **/
-
 .your-score {
     text-align: left;
     display: flex;
@@ -153,7 +144,6 @@ h1 {
 }
 
 /** HLL Photos & About, FAQ & Rules Section **/
-
 .about {
     display: flex;
     flex-wrap: nowrap;
@@ -170,7 +160,6 @@ h1 {
 }
 
 .about-p {
-
     text-align: center;
 }
 
@@ -232,8 +221,6 @@ h1 {
 }
 
 /* Social Links */
-
-
 .social-links {
     text-align: center;
     text-decoration: none;
@@ -267,9 +254,7 @@ h1 {
 }
 
 /** - Media Queries **/
-
 @media screen and (max-width:1650px) {
-
     .background-photo {
         width: auto;
         height: auto;
@@ -355,7 +340,6 @@ h1 {
 }
 
 @media screen and (max-width:550px) {
-
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -363,7 +347,6 @@ h1 {
 }
 
 @media screen and (max-width:1650px) {
-
     .game-box {
         width: auto;
         height: auto;
