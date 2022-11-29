@@ -19,6 +19,10 @@
 </head>
 
 <body>
+    <!--Begin Button-->
+    <div class="begin-quiz">Begin Quiz!</div>
+
+
     <!-- Header and Title-->
     <!--Some code used from previous "History of PlayStation Project"-->
     <header>
@@ -44,13 +48,14 @@
         <!--Question  Box (some code used here from Love Maths project)-->
         <div class="game-box">
             <div class="question-box">
-                <h3>Question: When was Metal Gear Solid first released?</h3>
+                <h3 class="game-questions">Question: When was Metal Gear Solid first released?</h3>
             </div>
             <div class="answer-box">
-                <p>1998</p>
-                <p>1999</p>
-                <p>2000</p>
-                <p>2067</p>
+                <button class="btn answer-btn btn-a">Answer A</button>
+                <button class="btn answer-btn btn-b">Answer B</button>
+                <button class="btn answer-btn btn-c">Answer C</button>
+                <button class="btn answer-btn btn-a">Play Again</button>
+
             </div>
             <div>
                 <button data-type="submit" class="btn btn--white"> Submit Answer</button>
@@ -147,6 +152,9 @@
     </footer>
     <!--Font Awesome Script-->
     <script src="https://kit.fontawesome.com/78446c3a66.js" crossorigin="anonymous"></script>
+    <!-- Javascript Link-->
+    <script src="/assets/js/script.js"></script>
+
 </body>
 
 </html>
