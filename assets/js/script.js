@@ -1,6 +1,6 @@
 import {
     questions
-} from ".trivia-questions.js";
+} from "./trivia-questions"
 
 let gameBox = document.getElementsByClassName("game-box");
 let questionBox = document.getElementsByClassName("question-box")
@@ -41,7 +41,7 @@ function renderNextQuestion() {
 function displayQuestion() {
     currentQuestion = getRandomQuestion();
     questionBox.innerText = currentQuestion.question;
-    displayAnswer();
+    displayAnswers();
     handleClickEvent();
 }
 
