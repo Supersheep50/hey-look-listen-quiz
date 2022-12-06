@@ -6,8 +6,8 @@ let questionBox = document.getElementsByClassName("question-box")[0];
 let buttonA = document.getElementsByClassName("btn-a")[0];
 let buttonB = document.getElementsByClassName("btn-b")[0];
 let buttonC = document.getElementsByClassName("btn-c")[0];
-let answerButtons = document.getElementsByClassName("answer-btn")
-let actionButtons = document.getElementsByClassName("action-btn")
+let answerButtons = document.getElementsByClassName("answer-btn");
+let actionButtons = document.getElementsByClassName("action-btn");
 let playAgainButton = document.getElementsByClassName("play-again")[0];
 let currentQuestion = null;
 let repeatedQuestion = [];
@@ -32,7 +32,6 @@ function isMaximumQuestionsLimitReached() {
 
 /** Renders the next question */
 function renderNextQuestion() {
-
     if (isMaximumQuestionsLimitReached()) {
         displayResult();
     } else {
@@ -45,7 +44,11 @@ function displayQuestion() {
     currentQuestion = getRandomQuestion();
     questionBox.innerText = currentQuestion.question;
     displayAnswers();
+    handleClickEvent();
+}
 
+function handleClickEvent() {
+    handleMouseEvent();
 }
 
 /**Shows Answers */
@@ -85,10 +88,10 @@ function checkAnswer() {
     let answer = currentQuestion.answer;
     let response = this.innerText;
     if (answer === response) {
-        this.style.backgroundColor = "gold"
+        this.style.backgroundColor = "gold";
         incrementScore();
     } else {
-        this.style.backgroundColor = "black"
+        this.style.backgroundColor = "black";
     }
 }
 
