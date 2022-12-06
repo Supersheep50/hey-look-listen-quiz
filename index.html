@@ -37,12 +37,12 @@
             </nav>
         </div>
     </header>
-    <!-- Background Photo-->
+    <!-- Background Photo -->
     <section>
         <div class="background-photo">
             <img src="/assets/images/video-game-background.png">
         </div>
-        <!--Question  Box (some code used here from Love Maths project)-->
+        <!-- Question  Box (some code used here from Love Maths project) -->
         <div class="game-box">
             <div class="question-box">
             </div>
@@ -57,81 +57,75 @@
             </div>
 
             <br>
-            <!-- You Score Box-->
+            <!-- You Score Box -->
             <div class="your-score">
-                Score <span class="score">0</span> / 20
+                Score <span class="score">0</span> / <span id="question-counter"></span>
             </div>
-            <!--Timer-->
+            <!-- Timer -->
             <div class="timer">
                 <p>Timer: 30 seconds</p>
             </div>
         </div>
     </section>
-    <!-- About Section-->
-    <div>
-        <div class="about">
-            <div class="about-p">
-                <article>
-                    <h2 id="about-section"><i class="fa-solid fa-gamepad"></i> ABOUT </h2>
-                    <p>welcome to the hey! look! listen! quiz!</p>
-                    <br>
-                    <p>this is a video game quiz sponsered and created by your favorite podcast friends, @HLL!</p>
-                    <br>
-                    <p>@HLL is a video game podcast that takes a look back at the games you love from yesteryear. join
-                        Jon, Liam, Owen and Kevin on Spotify, Apple Music and Google Podcasts.</p>
-                    <br>
-                    <p>the goal of the game is to get as many tricky video game questions right as you can!</p>
-                    <br>
-                </article>
-            </div>
-            <div class="about-photo">
-                <img src="assets/images/hll-photo-1.jpeg" alt="Picture of N64 controllers">
-            </div>
+    <!-- About Section -->
+    <div class="about">
+        <div class="about-p">
+            <article>
+                <h2 id="about-section"><i class="fa-solid fa-gamepad"></i> ABOUT </h2>
+                <p>welcome to the hey! look! listen! quiz!</p>
+                <br>
+                <p>this is a video game quiz sponsered and created by your favorite podcast friends, @HLL!</p>
+                <br>
+                <p>@HLL is a video game podcast that takes a look back at the games you love from yesteryear. join
+                    Jon, Liam, Owen and Kevin on Spotify, Apple Music and Google Podcasts.</p>
+                <br>
+                <p>the goal of the game is to get as many tricky video game questions right as you can!</p>
+                <br>
+            </article>
+        </div>
+        <div class="about-photo">
+            <img src="assets/images/hll-photo-1.jpeg" alt="Picture of N64 controllers">
         </div>
     </div>
-    <!-- Rules Section-->
-    <div>
-        <div class="rules">
-            <div class="rules-p">
-                <article>
-                    <h2 id="rules-section"><i class="fa-solid fa-gamepad"></i> RULES </h2>
-                    <p>the HLL Quiz is a multiple choice quiz based off of video game questions!</p>
-                    <br>
-                    <p>for each question you will be given 4 possible answers.</p>
-                    <br>
-                    <p>picking the right question will give you 1 point, picking the wrong question will give you nada,
-                        zilch, zero.</p>
-                    <br>
-                </article>
-            </div>
-            <div class="rules-photo">
-                <img src="assets/images/hll-photo-2.jpeg" alt="Picture of Monkey Island Video game">
-            </div>
+    <!-- Rules Section -->
+    <div class="rules">
+        <div class="rules-p">
+            <article>
+                <h2 id="rules-section"><i class="fa-solid fa-gamepad"></i> RULES </h2>
+                <p>the HLL Quiz is a multiple choice quiz based off of video game questions!</p>
+                <br>
+                <p>for each question you will be given 4 possible answers.</p>
+                <br>
+                <p>picking the right question will give you 1 point, picking the wrong question will give you nada,
+                    zilch, zero.</p>
+                <br>
+            </article>
+        </div>
+        <div class="rules-photo">
+            <img src="assets/images/hll-photo-2.jpeg" alt="Picture of Monkey Island Video game">
         </div>
     </div>
-    <!-- FAQ Section-->
-    <div>
-        <div class="faq">
-            <div class="faq-p">
-                <article>
-                    <h2 id="faq-section"><i class="fa-solid fa-gamepad"></i> FAQ</h2>
-                    <p>Q: do I win a prize if I get every question right?</p>
-                    <p>A: yes! the admiration and repsect from HLL </p>
-                    <br>
-                    <p>Q: is the HLL podcast the best podcast in the world?</p>
-                    <p>A: so funny you should ask....because it is!</p>
-                    <br>
-                    <p>Q: is the quiz hard?</p>
-                    <p>A: no! we've tried to make it as accessible as possible!</p>
-                    <br>
-                </article>
-            </div>
-            <div class="faq-photo">
-                <img src="assets/images/hll-photo-3.jpeg" alt="Picture of Metal Gear Solid videogame">
-            </div>
+    <!-- FAQ Section -->
+    <div class="faq">
+        <div class="faq-p">
+            <article>
+                <h2 id="faq-section"><i class="fa-solid fa-gamepad"></i> FAQ</h2>
+                <p>Q: do I win a prize if I get every question right?</p>
+                <p>A: yes! the admiration and repsect from HLL </p>
+                <br>
+                <p>Q: is the HLL podcast the best podcast in the world?</p>
+                <p>A: so funny you should ask....because it is!</p>
+                <br>
+                <p>Q: is the quiz hard?</p>
+                <p>A: no! we've tried to make it as accessible as possible!</p>
+                <br>
+            </article>
+        </div>
+        <div class="faq-photo">
+            <img src="assets/images/hll-photo-3.jpeg" alt="Picture of Metal Gear Solid videogame">
         </div>
     </div>
-    <!--Socials (some similiar code from previous project)-->
+    <!-- Socials (some similiar code from previous project) -->
     <footer>
         <div class="social-links">
             <ul class="social-links-list">
@@ -149,7 +143,9 @@
     <!--Font Awesome Script-->
     <script src="https://kit.fontawesome.com/78446c3a66.js" crossorigin="anonymous"></script>
     <!-- Javascript Link-->
-    <script type="module" src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+
 
 </body>
 

@@ -1,4 +1,5 @@
-export let questions = [{
+/* jshint esversion: 11 */
+let questions = [{
         "question": "When was Metal Gear Solid Released?",
         "choices": ["1998", "2001", "2004"],
         "answer": "1998"
