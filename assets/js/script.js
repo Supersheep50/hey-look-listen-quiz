@@ -117,3 +117,15 @@ function resetButtons() {
         button.style = null;
     }
 }
+
+var timer = 30;
+var interval = setInterval(function () {
+    document.getElementById('timer').innerHTML = timer;
+    timer--;
+    if (timer === 0) {
+        clearInterval(interval);
+        document.getElementById('timer').innerHTML = 'Complete!'
+        //or...
+        alert("Game Over!");
+    }
+}, 1000);
