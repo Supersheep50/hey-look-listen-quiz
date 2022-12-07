@@ -1,5 +1,4 @@
 /* jshint esversion: 11 */
-document.getElementById("question-counter").innerText = questions.length;
 
 let startGame = document.getElementsByClassName("begin-quiz")[0];
 let questionBox = document.getElementsByClassName("question-box")[0];
@@ -8,6 +7,8 @@ let buttonB = document.getElementsByClassName("btn-b")[0];
 let buttonC = document.getElementsByClassName("btn-c")[0];
 let answerButtons = document.getElementsByClassName("answer-btn");
 let actionButtons = document.getElementsByClassName("action-btn");
+let score = document.getElementsByClassName("score")[0];
+let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
 let buttons = document.getElementsByTagName("button");
 let currentQuestion = null;
@@ -21,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /** Begin Quiz */
 function beginQuiz() {
-
     renderNextQuestion();
 }
 
@@ -118,14 +118,14 @@ function resetButtons() {
     }
 }
 
-var timer = 30;
-var interval = setInterval(function () {
-    document.getElementById('timer').innerHTML = timer;
-    timer--;
-    if (timer === 0) {
-        clearInterval(interval);
-        document.getElementById('timer').innerHTML = 'Complete!'
-        //or...
-        alert("Game Over!");
-    }
-}, 1000);
+startGame.addEventListener("click", function () {
+    var timer = 60;
+    var interval = setInterval(function () {
+        document.getElementById('timer').innerHTML = timer;
+        timer--;
+        if (timer === 0) {
+            clearInterval(interval);
+            alert("Game Over!");
+        }
+    }, 1000);
+});
