@@ -2,6 +2,7 @@
 
 let startGame = document.getElementsByClassName("begin-quiz")[0];
 let questionBox = document.getElementsByClassName("question-box")[0];
+let buttons = document.getElementsByTagName("button");
 let buttonA = document.getElementsByClassName("btn-a")[0];
 let buttonB = document.getElementsByClassName("btn-b")[0];
 let buttonC = document.getElementsByClassName("btn-c")[0];
@@ -10,7 +11,6 @@ let actionButtons = document.getElementsByClassName("action-btn");
 let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
-let buttons = document.getElementsByTagName("button");
 let currentQuestion = null;
 let repeatedQuestion = [];
 
@@ -97,6 +97,14 @@ function checkAnswer() {
     }
 }
 
+function styleActionButton() {
+    this.style.backgroundColor = "lightyellow";
+}
+
+function unStyleActionButton() {
+    this.style.backgroundColor = "null";
+}
+
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
@@ -110,6 +118,14 @@ function displayActionButtons() {
 
         playAgainButton.addEventListener("click", newGame)
     }
+}
+
+function newGame() {
+    console.log("newGame is running");
+    repeatedQuestion.length = null;
+    scoreCount = 0;
+    score.innerTet = scoreCount;
+    renderNextQuestion;
 }
 
 function resetButtons() {
@@ -129,3 +145,14 @@ startGame.addEventListener("click", function () {
         }
     }, 1000);
 });
+
+function displayResult() {
+
+    if (scoreCount >= 20) {
+        gameBox.innerHTML = `Congrats! You don't suck!`;
+
+    } else if (scoreCount >= 15 && score < 20) {
+        gameBox.innerHTML = `Congrats! You only suck a bit!`;
+    }
+    displayActionButtons();
+}
