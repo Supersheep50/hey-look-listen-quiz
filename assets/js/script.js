@@ -9,6 +9,7 @@ let buttonC = document.getElementsByClassName("btn-c")[0];
 let answerButtons = document.getElementsByClassName("answer-btn");
 let actionButtons = document.getElementsByClassName("action-btn");
 let playAgainButton = document.getElementsByClassName("play-again")[0];
+let buttons = document.getElementsByTagName("button");
 let currentQuestion = null;
 let repeatedQuestion = [];
 
@@ -32,6 +33,7 @@ function isMaximumQuestionsLimitReached() {
 
 /** Renders the next question */
 function renderNextQuestion() {
+    resetButtons();
     if (isMaximumQuestionsLimitReached()) {
         displayResult();
     } else {
@@ -107,5 +109,11 @@ function displayActionButtons() {
         actionButton.style.display = "inline-block";
 
         playAgainButton.addEventListener("click", newGame)
+    }
+}
+
+function resetButtons() {
+    for (let button of buttons) {
+        button.style = null;
     }
 }
