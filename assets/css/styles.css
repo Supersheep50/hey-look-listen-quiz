@@ -102,7 +102,6 @@ h1 {
     width: 220px;
     height: 80px;
     font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
     letter-spacing: 1.2px;
     color: black;
     background-color: #ffffff;
@@ -120,7 +119,7 @@ h1 {
     background-color: #ffffff;
     border: black 4px solid;
     text-align: center;
-   
+
 }
 
 /** Question Box **/
@@ -148,14 +147,29 @@ h1 {
 }
 
 /** Timer **/
-.timer {
-    text-align: right;
+#timer {
+
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 
 }
+
+#timer p {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    background-color: #ffffff;
+    border: black 1px solid;
+    position: relative;
+
+}
+
 
 /** HLL Photos & About, FAQ & Rules Section **/
 .about {

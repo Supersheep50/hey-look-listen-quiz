@@ -85,12 +85,14 @@ function checkAnswer() {
     let answer = currentQuestion.answer;
     let response = this.innerText;
     if (answer === response) {
-        this.style.backgroundColor = "gold";
+        this.style.backgroundColor = "green";
         incrementScore();
     } else {
-        this.style.backgroundColor = "black";
+        this.style.backgroundColor = "red";
     }
 }
+
+
 /**Funciton to add to the scoreboard */
 function incrementScore() {
     score.innerText = ++scoreCount;

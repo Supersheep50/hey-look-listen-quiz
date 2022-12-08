@@ -102,6 +102,13 @@ If this section grows too long, you may want to split it off into a separate fil
       - Largest function has 10 statements in it, while the median is 3.
       - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
+### Fixed Bugs 
+
+- Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
+- Timer was not counting down from 60 and acting erratically when starting a new game.
+-
+
+
 ### Unfixed Bugs
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
