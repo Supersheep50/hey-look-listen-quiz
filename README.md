@@ -49,6 +49,30 @@ __The Timer__
 - The timer starts as soon as the user clicks Begin Quiz.
 - If the timer gets to 0, it's Game Over!
 
+![Timer]()
+
+__About Section__ 
+
+- This section provides information about the quiz and the podcast.
+
+![About]()
+
+__Rules__
+
+- This section informs the user of the rules of the quiz and how to gather points.
+
+![Rules]()
+
+__FAQ__
+
+- This section includes some light hearted FAQ's to add a bit of comedy to the page.
+
+![FAQ]()
+
+__Social Links__
+
+- There is a social media icon for Twitter, Instagram and Spotify. Clicking each will bring you to the corresponding HLL page.
+
 ### Features Left to Implement
 
 - Another feature idea

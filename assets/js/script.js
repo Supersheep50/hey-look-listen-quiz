@@ -1,5 +1,6 @@
 /* jshint esversion: 11 */
 
+/**Declarations */
 let startGame = document.getElementsByClassName("begin-quiz")[0];
 let questionBox = document.getElementsByClassName("question-box")[0];
 let buttons = document.getElementsByTagName("button");
@@ -13,24 +14,22 @@ let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
 let currentQuestion = null;
 let repeatedQuestion = [];
-
+/**Load the DOM */
 document.addEventListener('DOMContentLoaded', () => {
     startGame.addEventListener("click", beginQuiz, {
         once: true
     });
 })
-
 /** Begin Quiz */
 function beginQuiz() {
     renderNextQuestion();
 }
-
+/**Makes sure the quiz recognizes a max of 20 questions */
 function isMaximumQuestionsLimitReached() {
     if (repeatedQuestion.length >= 20) {
         return true;
     }
 }
-
 /** Renders the next question */
 function renderNextQuestion() {
     resetButtons();
@@ -40,7 +39,6 @@ function renderNextQuestion() {
         displayQuestion();
     }
 }
-
 /** Shows Questions */
 function displayQuestion() {
     currentQuestion = getRandomQuestion();
@@ -48,20 +46,17 @@ function displayQuestion() {
     displayAnswers();
     handleClickEvent();
 }
-
+/**Add ability to click using a mouse */
 function handleClickEvent() {
     handleMouseEvent();
 }
-
 /**Shows Answers */
-
 function displayAnswers() {
     buttonA.innerText = currentQuestion.choices[0];
     buttonB.innerText = currentQuestion.choices[1];
     buttonC.innerText = currentQuestion.choices[2];
 
 }
-
 /**Pulls a random question from the list */
 function getRandomQuestion() {
     currentQuestion = questions[Math.floor(Math.random() * questions.length)];
@@ -74,7 +69,7 @@ function getRandomQuestion() {
         return currentQuestion;
     }
 }
-
+/** Adds functionality for mouse users */
 function handleMouseEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("mousedown", checkAnswer);
@@ -85,7 +80,7 @@ function handleMouseEvent() {
         actionButton.addEventListener("mouseup", unStyleActionButton);
     }
 }
-
+/** Checks if its the correct answer and adds 1 to the score if so */
 function checkAnswer() {
     let answer = currentQuestion.answer;
     let response = this.innerText;
@@ -96,19 +91,19 @@ function checkAnswer() {
         this.style.backgroundColor = "black";
     }
 }
-
-function styleActionButton() {
-    this.style.backgroundColor = "lightyellow";
-}
-
-function unStyleActionButton() {
-    this.style.backgroundColor = "null";
-}
-
+/**Funciton to add to the scoreboard */
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
-
+/**Styles Play Again button when in use */
+function styleActionButton() {
+    this.style.backgroundColor = "lightyellow";
+}
+/**Removes styling from PLay Again button */
+function unStyleActionButton() {
+    this.style.backgroundColor = "null";
+}
+/**Adds functionality for Play Again button */
 function displayActionButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";
@@ -119,7 +114,7 @@ function displayActionButtons() {
         playAgainButton.addEventListener("click", newGame)
     }
 }
-
+/**Function for starting a New Game */
 function newGame() {
     console.log("newGame is running");
     repeatedQuestion.length = null;
@@ -127,13 +122,13 @@ function newGame() {
     score.innerTet = scoreCount;
     renderNextQuestion;
 }
-
+/**Resets button styling once you start a new game */
 function resetButtons() {
     for (let button of buttons) {
         button.style = null;
     }
 }
-
+/**Timer */
 startGame.addEventListener("click", function () {
     var timer = 60;
     var interval = setInterval(function () {
@@ -145,7 +140,7 @@ startGame.addEventListener("click", function () {
         }
     }, 1000);
 });
-
+/**Quiz results */
 function displayResult() {
 
     if (scoreCount >= 20) {
