@@ -12,6 +12,8 @@ let actionButtons = document.getElementsByClassName("action-btn");
 let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
+let shareResultsButton = document.getElementsByClassName("share-score")[0];
+let answerBox = document.getElementsByClassName("answer-box");
 let currentQuestion = null;
 let repeatedQuestion = [];
 /**Load the DOM */
@@ -92,14 +94,13 @@ function checkAnswer() {
     }
 }
 
-
 /**Funciton to add to the scoreboard */
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
 /**Styles Play Again button when in use */
 function styleActionButton() {
-    this.style.backgroundColor = "lightyellow";
+    this.style.backgroundColor = "green";
 }
 /**Removes styling from PLay Again button */
 function unStyleActionButton() {
@@ -112,17 +113,18 @@ function displayActionButtons() {
     }
     for (let actionButton of actionButtons) {
         actionButton.style.display = "inline-block";
-
-        playAgainButton.addEventListener("click", newGame)
     }
+    playAgainButton.addEventListener("click", newGame);
+    shareResultsButton.addEventListener("click", shareScore);
 }
 /**Function for starting a New Game */
 function newGame() {
     console.log("newGame is running");
     repeatedQuestion.length = null;
     scoreCount = 0;
-    score.innerTet = scoreCount;
-    renderNextQuestion;
+    score.innerText = scoreCount;
+    timer = 60;
+    renderNextQuestion();
 }
 /**Resets button styling once you start a new game */
 function resetButtons() {
@@ -130,7 +132,7 @@ function resetButtons() {
         button.style = null;
     }
 }
-/**Timer */
+/**Timer some code from Stack OVerflow (in Readme Credits)*/
 startGame.addEventListener("click", function () {
     var timer = 60;
     var interval = setInterval(function () {
@@ -145,11 +147,11 @@ startGame.addEventListener("click", function () {
 /**Quiz results */
 function displayResult() {
 
-    if (scoreCount >= 20) {
-        gameBox.innerHTML = `Congrats! You don't suck!`;
+    if (scoreCount >= 19) {
+        answerBox.innerHTML = "Congrats! You don't suck!";
 
     } else if (scoreCount >= 15 && score < 20) {
-        gameBox.innerHTML = `Congrats! You only suck a bit!`;
+        answerBox.innerHTML = "Congrats! You only suck a bit!";
     }
     displayActionButtons();
 }

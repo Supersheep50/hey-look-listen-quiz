@@ -106,7 +106,9 @@ If this section grows too long, you may want to split it off into a separate fil
 
 - Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
 - Timer was not counting down from 60 and acting erratically when starting a new game.
--
+- Background photo and Logo not showing up on live page.
+- Play Again button would only work when all 20 questions had been answered.
+- Score counter didnt stop at 20
 
 
 ### Unfixed Bugs
