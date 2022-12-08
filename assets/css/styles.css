@@ -100,7 +100,7 @@ h1 {
 /** Button Styling - Some code used from Love Maths **/
 .btn {
     width: 220px;
-    height: 60px;
+    height: 80px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -108,6 +108,19 @@ h1 {
     background-color: #ffffff;
     border: black 4px solid;
     text-align: center;
+}
+
+.begin-quiz {
+    width: 220px;
+    height: 80px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    background-color: #ffffff;
+    border: black 4px solid;
+    text-align: center;
+   
 }
 
 /** Question Box **/
