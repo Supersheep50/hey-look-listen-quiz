@@ -4,7 +4,7 @@ The Hey! Look! Listen! Quiz is a mutiple choice quiz game that is based off of t
 
 The questions vary in difficult but the most important thing is to have fun! Some questions include inside jokes for fans of the podcast.
 
-![Responsice Mockup]()
+![Responsive Mockup](INSERTPhotos)
 
 ## Features 
 
@@ -30,16 +30,24 @@ The questions vary in difficult but the most important thing is to have fun! Som
 
 ![Question]()
 
+__Play Again__
+
+- There is a PLay Again button that allows users to quickly reply the game. Clicking this resets the score and timer.
+
+![Play Again]()
+
 - __The Score Area__
 
   - There is a score at the bottom of the question box that tracks the users current score in the quiz out of 20.
-  - 
+  - The score counter goes up for every right answer and stays the same for every wrong answer.
 
-![score](media/love_maths_answer.png)
+![score]()
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+__The Timer__
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- At the bottom of the Question Area there is a timer. THe user has 60 seconds to complete the entire quiz. 
+- The timer starts as soon as the user clicks Begin Quiz.
+- If the timer gets to 0, it's Game Over!
 
 ### Features Left to Implement
 
