@@ -132,6 +132,10 @@ function resetButtons() {
         button.style = null;
     }
 }
+
+function resetTimer() {
+    
+}
 /**Timer some code from Stack OVerflow (in Readme Credits)*/
 startGame.addEventListener("click", function () {
     var timer = 60;

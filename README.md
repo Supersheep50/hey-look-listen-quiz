@@ -75,7 +75,7 @@ __Social Links__
 
 ### Features Left to Implement
 
-- Another feature idea
+- I had hoped to integrate a way for people to also listen to the podcast while playing th quiz but ultimately ran out of time before I could make that happen. 
 
 ## Testing 
 
@@ -105,7 +105,7 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Fixed Bugs 
 
 - Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
-- Timer was not counting down from 60 and acting erratically when starting a new game.
+- Timer was not counting down from 60 and acting erratically when starting a new game. 
 - Background photo and Logo not showing up on live page.
 - Play Again button would only work when all 20 questions had been answered.
 - Score counter didnt stop at 20
@@ -117,33 +117,34 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+The project was deployed to GitHub Pages using the following steps...
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://code-institute-org.github.io/love-maths/
-
+Log in to GitHub and locate the [GitHub Repository]
+At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+Click the the "Pages" link on the left-hand side of the screen.
+Under "Source", click the dropdown called "None" and select "Main Branch".
+The page will automatically refresh.
+Scroll back down through the page to locate the now published site link in the "Pages" section.
 
 ## Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- All content provided by myslef and my podcast co-creators at @HLL. 
+- All questions created by myself. 
+- About, Rules and FAQ created myself.
 
 ### Media
 
 - Background photo - Creative Bloc - https://www.creativebloq.com/news/top-video-game-character
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- All other photos and logos were created by myself and Liam Sheahan for the @HLL podcast. They can all be found on Instagram here - https://www.instagram.com/hllpod/
+
+### Code 
+
+- Code ideas and content were adapted from my previous project, A History of the PlayStation.
+- Some code used from course material and project Love Maths. 
+- Code to build Timer used from [StackOverflow](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript)(https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/)
+- Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
+
 
 
  
