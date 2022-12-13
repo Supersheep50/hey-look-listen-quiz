@@ -4,11 +4,13 @@ The Hey! Look! Listen! Quiz is a mutiple choice quiz game that is based off of t
 
 The questions vary in difficult but the most important thing is to have fun! Some questions include inside jokes for fans of the podcast.
 
+The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to make code something for it for a long time and a quiz felt likke the best idea!
+
 ![Responsive Mockup](/assets/images/hll-mockup.png)
 
 ## Features 
 
- Responsive on all device sizes:
+ __Responsive on all device sizes:__
     - [Mobile](/assets/images/mobile-responsive.png) 
     - [Tablet](/assets/images/tablet-responsiveness.png) 
     - [Desktop](/assets/images/desktop-responsiveness.png)
@@ -104,8 +106,18 @@ __Social Links__
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
+    - I sadly lost my Balsamiq Wireframes after being made redundant from my last job and my laptop wiped clean.
 
 ## Testing 
+
+### Manual Testing
+
+- The quiz was manually tested on a Desktop PC, ASUS Laptop, MacBook Pro, Iphone Pro and Ipad Air. It was manually tested in both Chrome and Safari by myself and podcast co-creators.
+
+### Lighthouse Testing
+
+- 
+
 ### Validator Testing 
 
 - HTML
@@ -125,14 +137,15 @@ __Social Links__
 ### Fixed Bugs 
 
 - Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
-- Timer was not counting down from 60 and acting erratically when starting a new game. 
-- Background photo and Logo not showing up on live page.
-- Play Again button would only work when all 20 questions had been answered.
-- Score counter didnt stop at 20
+- Timer was not counting down from 60 and acting erratically when starting a new game. I added in specific code to ensure the ctimer restarted from 60 when hitting Play Again or Begin Quiz.
+- Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
+- Play Again button would only work when all 20 questions had been answered - NOT FIXED
+- Score counter didnt stop at 20 after you kept clicking the right answer when the quiz was over.
+- 
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+- 
 
 ## Deployment
 
