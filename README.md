@@ -4,7 +4,7 @@ The Hey! Look! Listen! Quiz is a mutiple choice quiz game that is based off of t
 
 The questions vary in difficult but the most important thing is to have fun! Some questions include inside jokes for fans of the podcast.
 
-![Responsive Mockup](INSERTPhotos)
+![Responsive Mockup](/assets/images/hll-mockup.png)
 
 ## Features 
 
