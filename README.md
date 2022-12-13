@@ -8,7 +8,10 @@ The questions vary in difficult but the most important thing is to have fun! Som
 
 ## Features 
 
-### Existing Features
+ Responsive on all device sizes:
+    - [Mobile](/assets/images/mobile-responsive.png) 
+    - [Tablet](/assets/images/tablet-responsiveness.png) 
+    - [Desktop](/assets/images/desktop-responsiveness.png)
 
 - __HLL Logo__
 
