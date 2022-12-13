@@ -82,7 +82,7 @@ function handleMouseEvent() {
         actionButton.addEventListener("mouseup", unStyleActionButton);
     }
 }
-/** Checks if its the correct answer and adds 1 to the score if so */
+/** Checks if its the correct answer and adds 1 to the score if so (Some code from Love Maths project - credit in ReadMe) */
 function checkAnswer() {
     let answer = currentQuestion.answer;
     let response = this.innerText;
@@ -94,7 +94,7 @@ function checkAnswer() {
     }
 }
 
-/**Funciton to add to the scoreboard */
+/**Funciton to add to the scoreboard (Code from Love Maths prokect - credit in ReadMe) */
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
@@ -102,7 +102,7 @@ function incrementScore() {
 function styleActionButton() {
     this.style.backgroundColor = "green";
 }
-/**Removes styling from PLay Again button */
+/**Removes styling from Play Again button */
 function unStyleActionButton() {
     this.style.backgroundColor = "null";
 }
@@ -134,9 +134,9 @@ function resetButtons() {
 }
 
 function resetTimer() {
-    
+
 }
-/**Timer some code from Stack OVerflow (in Readme Credits)*/
+/**Timer - some code from StackOverflow (in Readme Credits)*/
 startGame.addEventListener("click", function () {
     var timer = 60;
     var interval = setInterval(function () {
@@ -148,7 +148,7 @@ startGame.addEventListener("click", function () {
         }
     }, 1000);
 });
-/**Quiz results */
+/**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
 function displayResult() {
 
     if (scoreCount >= 19) {

@@ -148,9 +148,9 @@ Scroll back down through the page to locate the now published site link in the "
 ## Credits 
 ### Content 
 
-- All content provided by myslef and my podcast co-creators at @HLL. 
-- All questions created by myself. 
-- About, Rules and FAQ created myself.
+- All content provided by the developer and my podcast co-creators at @HLL. 
+- All questions created by the developer. 
+- About, Rules and FAQ created by the developer.
 
 ### Media
 
@@ -159,9 +159,14 @@ Scroll back down through the page to locate the now published site link in the "
 
 ### Code 
 
-- Code ideas and content were adapted from my previous project, A History of the PlayStation.
-- Some code used from course material and project Love Maths to build the score countergoogle drive. 
-- Code to build Timer used from [StackOverflow](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript)(https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/)
+- Some ideas and content were adapted from my previous project, A History of the PlayStation.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)for general debugging.
+- [W3-Schools](https://www.w3schools.com/) for some helpful tips on building quizzes in JS.
+- Some code used from course material and previous project Love Maths to build the score countergoogle drive. 
+- Code to build Timer used from StackOverflow [here](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript) and [here](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/)
+- Code from this StackOverFlow [page](https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript) used to code Display Results section in my JS.
+- Some code used from this StackOverFlow [page](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array) to pull random questions for quiz.
+- [Code Institute Sampe Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 
 
