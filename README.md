@@ -14,13 +14,13 @@ The questions vary in difficult but the most important thing is to have fun! Som
 
   - Featured at the top left of the page, the HLL logo lets users know the name of the quiz and podcast. To the right of the logo a title is also included in case users are not familair with the podcast.
 
-![Logo]()
+![Logo](/assets/images/hll-logo.jpeg)
 
 - __The Nav Bar__
 
   - This section allows users to navigate to the different sections of the website, About, FAQ and Rules.
 
-![Game]()
+![Nav Bar](/assets/images/Nav-bar.png)
 
 - __The Question section__
 
@@ -28,20 +28,20 @@ The questions vary in difficult but the most important thing is to have fun! Som
   - Clicking Being Quiz will start the quiz and display the current question and 3 possible answers. 
   - Users are able to click one of the 3 possible options and get the question right or wrong.
 
-![Question]()
+![Question Section](/assets/images/question-section.png)
 
 __Play Again__
 
 - There is a PLay Again button that allows users to quickly reply the game. Clicking this resets the score and timer.
 
-![Play Again]()
+![Play Again](/assets/images/play-again.png)
 
 - __The Score Area__
 
   - There is a score at the bottom of the question box that tracks the users current score in the quiz out of 20.
   - The score counter goes up for every right answer and stays the same for every wrong answer.
 
-![score]()
+![Score Area](/assets/images/score-area.png)
 
 __The Timer__
 
@@ -49,29 +49,32 @@ __The Timer__
 - The timer starts as soon as the user clicks Begin Quiz.
 - If the timer gets to 0, it's Game Over!
 
-![Timer]()
+![Timer](/assets/images/timer.png)
 
 __About Section__ 
 
 - This section provides information about the quiz and the podcast.
 
-![About]()
+![About](/assets/images/about-section.png)
 
 __Rules__
 
 - This section informs the user of the rules of the quiz and how to gather points.
 
-![Rules]()
+![Rules](/assets/images/rules-section.png)
 
 __FAQ__
 
 - This section includes some light hearted FAQ's to add a bit of comedy to the page.
 
-![FAQ]()
+![FAQ](/assets/images/faq-section.png)
 
 __Social Links__
 
 - There is a social media icon for Twitter, Instagram and Spotify. Clicking each will bring you to the corresponding HLL page.
+
+![Social-Links](/assets/images/social-links.png)
+
 
 ### Features Left to Implement
 
