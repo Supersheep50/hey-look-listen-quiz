@@ -78,25 +78,39 @@ __Social Links__
 
 ### Features Left to Implement
 
-- I had hoped to integrate a way for people to also listen to the podcast while playing th quiz but ultimately ran out of time before I could make that happen. 
+- I had hoped to integrate a way for people to also listen to the podcast while playing th quiz but ultimately ran out of time before I could make that happen. I hope to add this at a later date.
+- A highscore board is something I hope to add at a later date. 
+
+## Technologies Used
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, Libraries & Programs Used
+
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Ubuntu'font into the style.css file which is used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used throughout the website to add social media icons and logos for aesthetic and UX purposes.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
 
 ## Testing 
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
 ### Validator Testing 
 
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
+    - [Results](/assets/images/w3c-html-results.png)
 - CSS
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - [Results](/assets/images/w3c-css-results.png)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 
@@ -112,7 +126,6 @@ If this section grows too long, you may want to split it off into a separate fil
 - Background photo and Logo not showing up on live page.
 - Play Again button would only work when all 20 questions had been answered.
 - Score counter didnt stop at 20
-
 
 ### Unfixed Bugs
 
@@ -144,7 +157,7 @@ Scroll back down through the page to locate the now published site link in the "
 ### Code 
 
 - Code ideas and content were adapted from my previous project, A History of the PlayStation.
-- Some code used from course material and project Love Maths. 
+- Some code used from course material and project Love Maths to build the score countergoogle drive. 
 - Code to build Timer used from [StackOverflow](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript)(https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/)
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 
