@@ -4,11 +4,11 @@ The Hey! Look! Listen! Quiz is a mutiple choice quiz game that is based off of t
 
 The questions vary in difficult but the most important thing is to have fun! Some questions include inside jokes for fans of the podcast.
 
-The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to make code something for it for a long time and a quiz felt likke the best idea!
+The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to code something for it for a long time and a quiz felt likke the best idea!
 
 ## Wireframes
 
-- I had wireframes created for desktop, tablet and phone using BAlsamiq but sadly they were lost when I was made redundant from Stripe. They were all on my work laptop.
+- I had wireframes created for desktop, tablet and phone using Balsamiq but sadly they were lost when I was made redundant from Stripe. They were all on my work laptop.
 
 ![Responsive Mockup](/assets/images/hll-mockup.png)
 
@@ -19,19 +19,19 @@ The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years.
     - [Tablet](/assets/images/tablet-responsiveness.png) 
     - [Desktop](/assets/images/desktop-responsiveness.png)
 
-- __HLL Logo__
+__HLL Logo__
 
   - Featured at the top left of the page, the HLL logo lets users know the name of the quiz and podcast. To the right of the logo a title is also included in case users are not familair with the podcast.
 
 ![Logo](/assets/images/hll-logo.jpeg)
 
-- __The Nav Bar__
+ __The Nav Bar__
 
   - This section allows users to navigate to the different sections of the website, About, FAQ and Rules.
 
-![Nav Bar](/assets/images/Nav-bar.png)
+![Nav Bar](/assets/images/nav-bar.png)
 
-- __The Question section__
+ __The Question section__
 
   - The question section is where users can see the randomly generated questions created by the quiz.
   - Clicking Being Quiz will start the quiz and display the current question and 3 possible answers. 
@@ -41,11 +41,11 @@ The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years.
 
 __Play Again__
 
-- There is a PLay Again button that allows users to quickly reply the game. Clicking this resets the score and timer.
+- There is a Play Again button that allows users to quickly reply the game. Clicking this resets the score and timer.
 
 ![Play Again](/assets/images/play-again.png)
 
-- __The Score Area__
+ __The Score Area__
 
   - There is a score at the bottom of the question box that tracks the users current score in the quiz out of 20.
   - The score counter goes up for every right answer and stays the same for every wrong answer.
@@ -190,6 +190,6 @@ Scroll back down through the page to locate the now published site link in the "
 
 ## Thank you!
 
-- Massive thank you to my partner Steph! She was a costant source of advice, debugging and ideas. 
+- Massive thank you to my partner Steph! She was a constant source of advice, debugging and ideas. 
 - My mentor Tim for giving me great guidance and advice. 
  
