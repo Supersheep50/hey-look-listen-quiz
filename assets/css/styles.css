@@ -132,21 +132,13 @@ h1 {
 /** Your Score **/
 .your-score {
     text-align: left;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
     justify-content: space-between;
 }
 
 /** Timer **/
 #timer {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#timer p {
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -157,6 +149,7 @@ h1 {
     background-color: #ffffff;
     border: black 1px solid;
     position: relative;
+    justify-content: space-between;
 }
 
 /** HLL Photos & About, FAQ & Rules Section **/

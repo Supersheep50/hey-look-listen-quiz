@@ -13,7 +13,7 @@ let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
 let shareResultsButton = document.getElementsByClassName("share-score")[0];
-let answerBox = document.getElementsByClassName("answer-box");
+let answerBox = document.getElementsByClassName("answer-box")[0];
 let currentQuestion = null;
 let repeatedQuestion = [];
 /**Load the DOM */
@@ -34,13 +34,14 @@ function isMaximumQuestionsLimitReached() {
 }
 /** Renders the next question */
 function renderNextQuestion() {
-    resetButtons();
     if (isMaximumQuestionsLimitReached()) {
         displayResult();
     } else {
+        resetButtons();
         displayQuestion();
     }
 }
+
 /** Shows Questions */
 function displayQuestion() {
     currentQuestion = getRandomQuestion();
@@ -61,9 +62,11 @@ function displayAnswers() {
 /**Pulls a random question from the list */
 function getRandomQuestion() {
     currentQuestion = questions[Math.floor(Math.random() * questions.length)];
-    if (isMaximumQuestionsLimitReached()) {
-        return false;
-    } else if (repeatedQuestion.indexOf(currentQuestion) >= 0) {
+    // if (isMaximumQuestionsLimitReached()) {
+    //     displayResult();
+    //     return false;
+    // } else 
+    if (repeatedQuestion.indexOf(currentQuestion) >= 0) {
         return getRandomQuestion();
     } else {
         repeatedQuestion.push(currentQuestion);
@@ -105,15 +108,15 @@ function unStyleActionButton() {
     this.style.backgroundColor = "null";
 }
 /**Adds functionality for Play Again button */
-function displayActionButtons() {
+function hideButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";
     }
     for (let actionButton of actionButtons) {
-        actionButton.style.display = "inline-block";
+        actionButton.style.display = "none";
     }
+    
     playAgainButton.addEventListener("click", newGame);
-    shareResultsButton.addEventListener("click", shareScore);
 }
 /**Function for starting a New Game */
 function newGame() {
@@ -121,7 +124,7 @@ function newGame() {
     repeatedQuestion.length = null;
     scoreCount = 0;
     score.innerText = scoreCount;
-    timer = 60;
+    resetTimer();
     renderNextQuestion();
 }
 /**Resets button styling once you start a new game */
@@ -131,8 +134,6 @@ function resetButtons() {
     }
 }
 
-function resetTimer() {}
-
 /**Timer - some code from StackOverflow (in Readme Credits)*/
 startGame.addEventListener("click", function () {
     var timer = 60;
@@ -141,18 +142,21 @@ startGame.addEventListener("click", function () {
         timer--;
         if (timer === 0) {
             clearInterval(interval);
-            alert("Game Over!");
+            alert("Time up! Game Over!");
         }
     }, 1000);
 });
+
+function resetTimer() {
+    clearTimeout("timer");
+
+}
 /**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
 function displayResult() {
-
     if (scoreCount >= 19) {
-        answerBox.innerHTML = "Congrats! You don't suck!";
+        questionBox.innerText = "Congrats! You don't suck!";
 
-    } else if (scoreCount >= 15 && score < 20) {
-        answerBox.innerHTML = "Congrats! You only suck a bit!";
+    } else if (scoreCount >= 15 && score < 19) {
+        questionBox.innerText = "Congrats! You only suck a bit!";
     }
-    displayActionButtons();
 }
