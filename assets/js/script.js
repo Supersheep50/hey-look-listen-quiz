@@ -16,6 +16,7 @@ let shareResultsButton = document.getElementsByClassName("share-score")[0];
 let answerBox = document.getElementsByClassName("answer-box")[0];
 let currentQuestion = null;
 let repeatedQuestion = [];
+
 /**Load the DOM */
 document.addEventListener('DOMContentLoaded', () => {
     startGame.addEventListener("click", beginQuiz, {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 /** Begin Quiz */
 function beginQuiz() {
+    runTimer();
     renderNextQuestion();
 }
 /**Makes sure the quiz recognizes a max of 20 questions */
@@ -127,6 +129,7 @@ function newGame() {
     resetTimer();
     renderNextQuestion();
 }
+
 /**Resets button styling once you start a new game */
 function resetButtons() {
     for (let button of buttons) {
@@ -135,22 +138,25 @@ function resetButtons() {
 }
 
 /**Timer - some code from StackOverflow (in Readme Credits)*/
-startGame.addEventListener("click", function () {
-    var timer = 60;
-    var interval = setInterval(function () {
+function runTimer() {
+    let timer = 60;
+    let interval = setInterval(function () {
         document.getElementById('timer').innerHTML = timer;
         timer--;
         if (timer === -1) {
+            document.getElementById('timer').innerHTML = timer;
             clearTimeout(interval);
             alert("Time up! Game Over!");
+            displayResult();
         }
     }, 1000);
-});
+};
 
 function resetTimer() {
-    clearTimeout("timer");
-
+    document.getElementById("timer").style.display = "flex";
+    runTimer();
 }
+
 /**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
 function displayResult() {
     if (scoreCount >= 19) {
