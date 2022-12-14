@@ -140,8 +140,8 @@ startGame.addEventListener("click", function () {
     var interval = setInterval(function () {
         document.getElementById('timer').innerHTML = timer;
         timer--;
-        if (timer === 0) {
-            clearInterval(interval);
+        if (timer === -1) {
+            clearTimeout(interval);
             alert("Time up! Game Over!");
         }
     }, 1000);
