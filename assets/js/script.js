@@ -48,7 +48,7 @@ function displayQuestion() {
     displayAnswers();
     handleClickEvent();
 }
-/**Add ability to click using a mouse */
+/**Add ability to click using a mouse (Code adapted from MDN - credit in Readme) */
 function handleClickEvent() {
     handleMouseEvent();
 }
