@@ -115,7 +115,7 @@ function hideButtons() {
     for (let actionButton of actionButtons) {
         actionButton.style.display = "none";
     }
-    
+    document.getElementById("timer").style.display = "none";
     playAgainButton.addEventListener("click", newGame);
 }
 /**Function for starting a New Game */
@@ -159,4 +159,5 @@ function displayResult() {
     } else if (scoreCount >= 15 && score < 19) {
         questionBox.innerText = "Congrats! You only suck a bit!";
     }
+    hideButtons();
 }
