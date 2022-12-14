@@ -57,7 +57,6 @@ function displayAnswers() {
     buttonA.innerText = currentQuestion.choices[0];
     buttonB.innerText = currentQuestion.choices[1];
     buttonC.innerText = currentQuestion.choices[2];
-
 }
 /**Pulls a random question from the list */
 function getRandomQuestion() {
@@ -93,7 +92,6 @@ function checkAnswer() {
         this.style.backgroundColor = "red";
     }
 }
-
 /**Funciton to add to the scoreboard (Code from Love Maths prokect - credit in ReadMe) */
 function incrementScore() {
     score.innerText = ++scoreCount;
@@ -133,9 +131,8 @@ function resetButtons() {
     }
 }
 
-function resetTimer() {
+function resetTimer() {}
 
-}
 /**Timer - some code from StackOverflow (in Readme Credits)*/
 startGame.addEventListener("click", function () {
     var timer = 60;

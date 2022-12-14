@@ -11,7 +11,6 @@ body {
 }
 
 body {
-
     background-color: gold;
 }
 
@@ -22,7 +21,6 @@ h1 {
     width: 100%;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
-
 }
 
 /** Nav Bar & logo (Similiar code to previous project) **/
@@ -31,7 +29,6 @@ h1 {
     display: flex;
     text-align: left;
     margin: auto;
-
 }
 
 .nav-bar {
@@ -42,14 +39,12 @@ h1 {
     display: flex;
     background-color: #ffffff;
     height: 200px;
-
 }
 
 .nav-links {
     display: flex;
     flex-direction: row-reverse;
     list-style-type: none;
-
 }
 
 .nav-links li {
@@ -70,7 +65,6 @@ h1 {
 
 /** Background Photo **/
 .background-photo {
-
     width: 100%;
     height: 550px;
     background-position: center 100%;
@@ -94,7 +88,6 @@ h1 {
     padding: 30px;
     border: black 4px solid;
     border-radius: 50px;
-
 }
 
 /** Button Styling - Some code used from Love Maths **/
@@ -119,7 +112,6 @@ h1 {
     background-color: #ffffff;
     border: black 4px solid;
     text-align: center;
-
 }
 
 /** Question Box **/
@@ -148,12 +140,10 @@ h1 {
 
 /** Timer **/
 #timer {
-
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 #timer p {
@@ -167,9 +157,7 @@ h1 {
     background-color: #ffffff;
     border: black 1px solid;
     position: relative;
-
 }
-
 
 /** HLL Photos & About, FAQ & Rules Section **/
 .about {
@@ -289,7 +277,6 @@ h1 {
         max-width: 100%;
         max-height: 100%;
     }
-
 
     img {
         width: auto;

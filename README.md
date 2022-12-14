@@ -6,6 +6,10 @@ The questions vary in difficult but the most important thing is to have fun! Som
 
 The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to make code something for it for a long time and a quiz felt likke the best idea!
 
+## Wireframes
+
+- I had wireframes created for desktop, tablet and phone using BAlsamiq but sadly they were lost when I was made redundant from Stripe. They were all on my work laptop.
+
 ![Responsive Mockup](/assets/images/hll-mockup.png)
 
 ## Features 
@@ -113,6 +117,7 @@ __Social Links__
 ### Manual Testing
 
 - The quiz was manually tested on a Desktop PC, ASUS Laptop, MacBook Pro, Iphone Pro and Ipad Air. It was manually tested in both Chrome and Safari by myself and podcast co-creators.
+- Dev tools used to make sure everything was responsive.
 
 ### Lighthouse Testing
 
@@ -137,7 +142,7 @@ __Social Links__
 ### Fixed Bugs 
 
 - Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
-- Timer was not counting down from 60 and acting erratically when starting a new game. I added in specific code to ensure the ctimer restarted from 60 when hitting Play Again or Begin Quiz.
+- Timer was not counting down from 60 and acting erratically when starting a new game. I added in specific code to ensure the timer restarted from 60 when hitting Play Again or Begin Quiz.
 - Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
 - Play Again button would only work when all 20 questions had been answered - NOT FIXED
 - Score counter didnt stop at 20 after you kept clicking the right answer when the quiz was over.
@@ -183,6 +188,8 @@ Scroll back down through the page to locate the now published site link in the "
 - Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 
+## Thank you!
 
-
+- Massive thank you to my partner Steph! She was a costant source of advice, debugging and ideas. 
+- My mentor Tim for giving me great guidance and advice. 
  
