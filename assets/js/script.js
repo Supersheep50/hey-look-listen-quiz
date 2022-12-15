@@ -114,15 +114,14 @@ function hideButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";
     }
-    for (let actionButton of actionButtons) {
-        actionButton.style.display = "none";
-    }
+
     document.getElementById("timer").style.display = "none";
     playAgainButton.addEventListener("click", newGame);
 }
 
-const shareBtn = document.querySelector('.share-btn');
-const shareOptions = document.querySelector('.share-options');
+/**Share Quiz code - Code adapted from Dev.to (Credit in ReadMe) */
+let shareBtn = document.querySelector('.share-quiz');
+let shareOptions = document.querySelector('.share-options');
 
 shareBtn.addEventListener('click', () => {
     shareOptions.classList.toggle('active');
@@ -172,6 +171,12 @@ function displayResult() {
 
     } else if (scoreCount >= 15 && score < 19) {
         questionBox.innerText = "Congrats! You only suck a bit!";
+    } else if (scoreCount >= 10 && score < 14) {
+        questionBox.innerText = "Oh this isn't going well is it?";
+    } else if (scoreCount >= 6 && score < 9) {
+        questionBox.innerText = "Have you ever played a videogame?";
+    } else if (scoreCount >= 1 && score < 5) {
+        questionBox.innerText = "Yikes!!!";
     }
     hideButtons();
 }

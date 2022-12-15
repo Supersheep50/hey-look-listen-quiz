@@ -60,6 +60,12 @@ __The Timer__
 
 ![Timer](/assets/images/timer.png)
 
+__Share Quiz__
+
+- There is a button for users to share the quiz with friends on social media or copy the link.
+
+![Timer](/assets/images/share-quiz.png)
+
 __About Section__ 
 
 - This section provides information about the quiz and the podcast.
@@ -186,6 +192,7 @@ Scroll back down through the page to locate the now published site link in the "
 - Some code used from this StackOverFlow [page](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array) to pull random questions for quiz.
 - [Code Institute Sampe Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
 - Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
+- Code adapted for Share Quiz function found [here](https://dev.to/kunaal438/how-to-make-a-share-button-html-awesome-button-effect-css-modern-web-coding-tutorial-2app) on Dev.to.
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 
 ## Thank you!

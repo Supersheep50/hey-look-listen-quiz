@@ -94,7 +94,7 @@ h1 {
 .btn {
     width: 220px;
     height: 80px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Orbitron", sans-serif;
     letter-spacing: 1.2px;
     color: black;
     background-color: #ffffff;
@@ -106,7 +106,7 @@ h1 {
 .begin-quiz {
     width: 220px;
     height: 80px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Orbitron", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: black;
@@ -115,18 +115,8 @@ h1 {
     text-align: center;
 }
 
-.title {
-    opacity: 0;
-    transition: .5s;
-    transition-delay: 0s;
-    font-size: 20px;
-    text-transform: capitalize;
-    border-bottom: 1px solid #fff;
-    width: fit-content;
-    padding: 0 20px 3px 0;
-}
-
-.social-media{
+/** Share Quiz styling - Code adapted from Dev.to - Credit in ReadMe**/
+.social-media {
     opacity: 0;
     transition: .5s;
     transition-delay: 0s;
@@ -153,6 +143,27 @@ h1 {
     padding: 0 10px;
 }
 
+.share-options.active .title,
+.share-options.active .social-media,
+.share-options.active .link-container {
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border: none;
+    height: 100%;
+    width: 30%;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: "Orbitron", sans-serif;
+}
 
 /** Question Box **/
 .question-box {
@@ -182,7 +193,7 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    font-family: "Raleway", sans-serif;
+    font-family: "Orbitron", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: black;
