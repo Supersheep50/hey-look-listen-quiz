@@ -186,7 +186,7 @@ Scroll back down through the page to locate the now published site link in the "
 - Some ideas and content were adapted from my previous project, A History of the PlayStation.
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)for general debugging.
 - [W3-Schools](https://www.w3schools.com/) for some helpful tips on building quizzes in JS.
-- Some code used from course material and previous project Love Maths to build the score countergoogle drive. 
+- Some code used from course material and previous project Love Maths to build the score counter. 
 - Code to build Timer used from StackOverflow [here](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript) and [here](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/)
 - Code from this StackOverFlow [page](https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript) used to code Display Results section in my JS.
 - Some code used from this StackOverFlow [page](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array) to pull random questions for quiz.

@@ -78,8 +78,7 @@ h1 {
     background-color: #4acfee;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
-    max-height: 450px;
+    height: fit-content;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -121,7 +120,7 @@ h1 {
     transition: .5s;
     transition-delay: 0s;
     width: 250px;
-    height: 120px;
+    height: fit-content;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -134,7 +133,7 @@ h1 {
     transition-delay: 0s;
     width: 100%;
     position: relative;
-    height: 40px;
+    height: fit-content;
     display: flex;
     align-items: center;
     border-radius: 40px;
@@ -143,7 +142,7 @@ h1 {
     padding: 0 10px;
 }
 
-.share-options.active .title,
+
 .share-options.active .social-media,
 .share-options.active .link-container {
     opacity: 1;
@@ -175,11 +174,6 @@ h1 {
     font-size: x-large;
 }
 
-.answer-box p {
-    border: black 4px solid;
-    background-color: #ffffff;
-}
-
 /** Your Score **/
 .your-score {
     text-align: left;
@@ -204,57 +198,8 @@ h1 {
 }
 
 /** HLL Photos & About, FAQ & Rules Section **/
-.about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-    margin-bottom: 30px;
-    width: auto;
-    height: auto;
-    background-color: gold;
-    font-size: xx-large;
-    font-weight: bolder;
-
-}
-
-.about-p {
-    text-align: center;
-}
-
-.about-photo {
-    display: inline-flex;
-    flex-direction: row;
-    width: 50%;
-    height: 750px;
-}
-
-.rules {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 30px;
-    margin-bottom: 30px;
-    width: auto;
-    height: auto;
-    background-color: gold;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.rules-photo {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    width: 50%;
-    height: 750px;
-}
-
-.rules-p {
-    text-align: center;
-}
-
+.about,
+.rules,
 .faq {
     display: flex;
     flex-wrap: nowrap;
@@ -267,17 +212,27 @@ h1 {
     background-color: gold;
     font-size: xx-large;
     font-weight: bolder;
+
 }
 
+.rules {
+    flex-direction: row-reverse;
+}
+
+.about-p,
+.rules-p,
+.faq-p {
+    text-align: center;
+    width: 50%;
+}
+
+.about-photo,
+.rules-photo,
 .faq-photo {
     display: inline-flex;
     flex-direction: row;
-    width: 50%;
+    width: auto;
     height: 750px;
-}
-
-.faq-p {
-    text-align: center;
 }
 
 /* Social Links */
@@ -314,7 +269,7 @@ h1 {
 }
 
 /** - Media Queries **/
-@media screen and (max-width:1650px) {
+@media screen and (max-width:1024px) {
     .background-photo {
         width: auto;
         height: auto;
