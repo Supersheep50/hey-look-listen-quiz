@@ -115,6 +115,45 @@ h1 {
     text-align: center;
 }
 
+.title {
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    padding: 0 20px 3px 0;
+}
+
+.social-media{
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.link-container {
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+
 /** Question Box **/
 .question-box {
     font-size: x-large;

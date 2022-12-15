@@ -120,6 +120,14 @@ function hideButtons() {
     document.getElementById("timer").style.display = "none";
     playAgainButton.addEventListener("click", newGame);
 }
+
+const shareBtn = document.querySelector('.share-btn');
+const shareOptions = document.querySelector('.share-options');
+
+shareBtn.addEventListener('click', () => {
+    shareOptions.classList.toggle('active');
+})
+
 /**Function for starting a New Game */
 function newGame() {
     console.log("newGame is running");
