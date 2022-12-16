@@ -43,7 +43,6 @@ function renderNextQuestion() {
         displayQuestion();
     }
 }
-
 /** Shows Questions */
 function displayQuestion() {
     currentQuestion = getRandomQuestion();

@@ -89,6 +89,12 @@ h1 {
     border-radius: 50px;
 }
 
+.question-box,
+h3 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
 /** Button Styling - Some code used from Love Maths **/
 .btn {
     width: 220px;
@@ -281,7 +287,7 @@ h1 {
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1430px) {
     .background-photo {
         width: auto;
         height: auto;
