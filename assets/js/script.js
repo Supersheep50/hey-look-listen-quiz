@@ -50,9 +50,13 @@ function displayQuestion() {
     displayAnswers();
     handleClickEvent();
 }
-/**Add ability to click using a mouse (Code adapted from MDN - credit in Readme) */
+/**Add ability to click using a mouse or touch (Code adapted from MDN & Codeburst - credit in Readme) */
 function handleClickEvent() {
-    handleMouseEvent();
+    if (window.isTouchScreen) {
+        handleTouchEvent();
+    } else {
+        handleMouseEvent();
+    }
 }
 /**Shows Answers */
 function displayAnswers() {
@@ -74,7 +78,11 @@ function getRandomQuestion() {
         return currentQuestion;
     }
 }
-/** Adds functionality for mouse users */
+/** Touch funtionality - code adapted from Codeburst - Credit in Readme */
+window.addEventListener('touchstart', function onFirstTouch() {
+    this.window.isTouchScreen = true;
+}, false)
+/** Adds functionality for mouse users and touch users */
 function handleMouseEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("mousedown", checkAnswer);
@@ -83,6 +91,17 @@ function handleMouseEvent() {
     for (let actionButton of actionButtons) {
         actionButton.addEventListener("mousedown", styleActionButton);
         actionButton.addEventListener("mouseup", unStyleActionButton);
+    }
+}
+
+function handleTouchEvent() {
+    for (let answerButton of answerButtons) {
+        answerButton.addEventListener("touchstart", checkAnswer);
+        answerButton.addEventListener("touchend", renderNextQuestion);
+    }
+    for (let actionButton of actionButtons) {
+        actionButton.addEventListener("touchstart", styleActionButton);
+        actionButton.addEventListener("touchend", unStyleActionButton);
     }
 }
 /** Checks if its the correct answer and adds 1 to the score if so (Some code from Love Maths project - credit in ReadMe) */
