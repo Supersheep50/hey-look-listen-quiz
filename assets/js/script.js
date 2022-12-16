@@ -82,7 +82,7 @@ function getRandomQuestion() {
 window.addEventListener('touchstart', function onFirstTouch() {
     this.window.isTouchScreen = true;
 }, false)
-/** Adds functionality for mouse users and touch users */
+/** Adds functionality for mouse users and touch users- Code adpated from Codeburst and StackOverFlow - Credit in Readme */
 function handleMouseEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("mousedown", checkAnswer);
@@ -93,7 +93,6 @@ function handleMouseEvent() {
         actionButton.addEventListener("mouseup", unStyleActionButton);
     }
 }
-
 function handleTouchEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("touchstart", checkAnswer);
@@ -127,7 +126,7 @@ function styleActionButton() {
 function unStyleActionButton() {
     this.style.backgroundColor = "null";
 }
-/**Adds functionality for Play Again button */
+/**Adds functionality for Play Again button an hides other buttons */
 function hideButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";

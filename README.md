@@ -193,6 +193,7 @@ Scroll back down through the page to locate the now published site link in the "
 - [Code Institute Sampe Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
 - Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
 - Code adapted for Share Quiz function found [here](https://dev.to/kunaal438/how-to-make-a-share-button-html-awesome-button-effect-css-modern-web-coding-tutorial-2app) on Dev.to.
+- Touch functionlaity added from Codeburst [here](https://codeburst.io/the-only-way-to-detect-touch-with-javascript-7791a3346685) and StackOverFlow [here](https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript)
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 
 ## Thank you!
