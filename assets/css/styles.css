@@ -95,6 +95,10 @@ h3 {
     font-size: xx-large;
 }
 
+.answer-btn {
+    display: none;
+}
+
 /** Button Styling - Some code used from Love Maths **/
 .btn {
     width: 220px;
@@ -347,5 +351,13 @@ h3 {
         text-align: center;
         font-size: small;
         width: fit-content;
+    }
+
+    .answer-box {
+        text-align: center;
+    }
+
+    .btn {
+        height: fit-content;
     }
 }

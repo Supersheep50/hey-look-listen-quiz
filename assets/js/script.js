@@ -3,7 +3,6 @@
 /**Declarations */
 let startGame = document.getElementsByClassName("begin-quiz")[0];
 let questionBox = document.getElementsByClassName("question-box")[0];
-let buttons = document.getElementsByTagName("button");
 let buttonA = document.getElementsByClassName("btn-a")[0];
 let buttonB = document.getElementsByClassName("btn-b")[0];
 let buttonC = document.getElementsByClassName("btn-c")[0];
@@ -24,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /** Begin Quiz */
 function beginQuiz() {
     hideActionButtons();
+    displayAnswerButtons();
     runTimer();
     renderNextQuestion();
 }
@@ -77,26 +77,20 @@ function getRandomQuestion() {
 window.addEventListener('touchstart', function onFirstTouch() {
     this.window.isTouchScreen = true;
 }, false);
+
 /** Adds functionality for mouse users and touch users- Code adpated from Codeburst and StackOverFlow - Credit in Readme */
 function handleMouseEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("mousedown", checkAnswer);
         answerButton.addEventListener("mouseup", renderNextQuestion);
     }
-    for (let actionButton of actionButtons) {
-        actionButton.addEventListener("mousedown", styleActionButton);
-        actionButton.addEventListener("mouseup", unStyleActionButton);
-    }
+
 }
 
 function handleTouchEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("touchstart", checkAnswer);
         answerButton.addEventListener("touchend", renderNextQuestion);
-    }
-    for (let actionButton of actionButtons) {
-        actionButton.addEventListener("touchstart", styleActionButton);
-        actionButton.addEventListener("touchend", unStyleActionButton);
     }
 }
 /** Checks if its the correct answer and adds 1 to the score if so (Some code from Love Maths project - credit in ReadMe) */
@@ -114,13 +108,11 @@ function checkAnswer() {
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
-
 /**Adds functionality for Play Again button an hides other buttons */
 function hideAnswerButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";
     }
-
     document.getElementById("timer").style.display = "none";
     playAgainButton.addEventListener("click", newGame);
 }
@@ -134,6 +126,12 @@ function hideActionButtons() {
 function displayActionButtons() {
     for (let actionButton of actionButtons) {
         actionButton.style.display = "inline-block";
+    }
+}
+
+function displayAnswerButtons() {
+    for (let answerButton of answerButtons) {
+        answerButton.style.display = "inline-block";
     }
 }
 /**Share Quiz code - Code adapted from Dev.to (Credit in ReadMe) */
@@ -151,17 +149,16 @@ function newGame() {
     scoreCount = 0;
     score.innerText = scoreCount;
     hideActionButtons();
+    displayAnswerButtons();
     resetTimer();
     renderNextQuestion();
 }
-
 /**Resets button styling once you start a new game */
 function resetButtons() {
     for (let answerButton of answerButtons) {
-        answerButton.style = null;
+        answerButton.style.backgroundColor = null;
     }
 }
-
 /**Timer - some code from StackOverflow (in Readme Credits)*/
 function runTimer() {
     let timer = 60;
@@ -181,19 +178,17 @@ function resetTimer() {
     document.getElementById("timer").style.display = "flex";
     runTimer();
 }
-
 /**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
 function displayResult() {
     if (scoreCount >= 19) {
         questionBox.innerText = "Congrats! You don't suck!";
-
     } else if (scoreCount >= 15 && score < 19) {
         questionBox.innerText = "Congrats! You only suck a bit!";
-    } else if (scoreCount >= 10 && score < 14) {
+    } else if (scoreCount >= 10 && score < 15) {
         questionBox.innerText = "Oh this isn't going well is it?";
-    } else if (scoreCount >= 6 && score < 9) {
+    } else if (scoreCount >= 6 && score < 10) {
         questionBox.innerText = "Have you ever played a videogame?";
-    } else if (scoreCount >= 1 && score < 5) {
+    } else {
         questionBox.innerText = "Yikes!!!";
     }
     hideAnswerButtons();
