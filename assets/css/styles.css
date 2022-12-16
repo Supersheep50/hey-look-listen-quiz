@@ -65,7 +65,8 @@ h1 {
 
 /** Background Photo **/
 .background-photo {
-    width: auto height: auto;
+    width: fit-content;
+    height: fit-content;
     background-position: center 100%;
     text-align: center;
     color: white;
@@ -276,23 +277,7 @@ h3 {
 
 /** - Media Queries **/
 
-@media screen and (max-width:1900) {
-    .game-box {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        margin: auto;
-    }
-    .background-photo {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-    }
-}
-
-@media screen and (max-width:1430px) {
+@media screen and (max-width:1024px) {
     .background-photo {
         width: auto;
         height: auto;

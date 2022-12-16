@@ -12,8 +12,6 @@ let actionButtons = document.getElementsByClassName("action-btn");
 let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
-let shareResultsButton = document.getElementsByClassName("share-score")[0];
-let answerBox = document.getElementsByClassName("answer-box")[0];
 let currentQuestion = null;
 let repeatedQuestion = [];
 
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startGame.addEventListener("click", beginQuiz, {
         once: true
     });
-})
+});
 /** Begin Quiz */
 function beginQuiz() {
     runTimer();
@@ -67,10 +65,6 @@ function displayAnswers() {
 /**Pulls a random question from the list */
 function getRandomQuestion() {
     currentQuestion = questions[Math.floor(Math.random() * questions.length)];
-    // if (isMaximumQuestionsLimitReached()) {
-    //     displayResult();
-    //     return false;
-    // } else 
     if (repeatedQuestion.indexOf(currentQuestion) >= 0) {
         return getRandomQuestion();
     } else {
@@ -81,7 +75,7 @@ function getRandomQuestion() {
 /** Touch funtionality - code adapted from Codeburst - Credit in Readme */
 window.addEventListener('touchstart', function onFirstTouch() {
     this.window.isTouchScreen = true;
-}, false)
+}, false);
 /** Adds functionality for mouse users and touch users- Code adpated from Codeburst and StackOverFlow - Credit in Readme */
 function handleMouseEvent() {
     for (let answerButton of answerButtons) {
@@ -93,6 +87,7 @@ function handleMouseEvent() {
         actionButton.addEventListener("mouseup", unStyleActionButton);
     }
 }
+
 function handleTouchEvent() {
     for (let answerButton of answerButtons) {
         answerButton.addEventListener("touchstart", checkAnswer);
@@ -142,7 +137,7 @@ let shareOptions = document.querySelector('.share-options');
 
 shareBtn.addEventListener('click', () => {
     shareOptions.classList.toggle('active');
-})
+});
 
 /**Function for starting a New Game */
 function newGame() {
@@ -174,7 +169,7 @@ function runTimer() {
             displayResult();
         }
     }, 1000);
-};
+}
 
 function resetTimer() {
     document.getElementById("timer").style.display = "flex";
