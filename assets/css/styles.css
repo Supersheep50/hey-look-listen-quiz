@@ -269,6 +269,17 @@ h1 {
 }
 
 /** - Media Queries **/
+
+@media screen and (max-width:1650px) {
+    .game-box {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .background-photo {
         width: auto;
@@ -296,43 +307,8 @@ h1 {
         height: auto;
     }
 
-    .about {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-
-    }
-
-    .about-photo {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .rules {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .rules-photo {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
+    .about,
+    .rules,
     .faq {
         display: flex;
         flex-direction: column;
@@ -343,6 +319,8 @@ h1 {
 
     }
 
+    .about-photo,
+    .rules-photo,
     .faq-photo {
         display: flex;
         flex-direction: column;
@@ -353,19 +331,15 @@ h1 {
     }
 }
 
+.about-p,
+.rules-p,
+.faq-p {
+    text-align: center;
+}
+
 @media screen and (max-width:550px) {
     .nav-links {
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width:1650px) {
-    .game-box {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        margin: auto;
     }
 }
