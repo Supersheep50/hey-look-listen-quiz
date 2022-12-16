@@ -23,7 +23,7 @@ Live Site [here](https://supersheep50.github.io/hey-look-listen-quiz/)
 
 __HLL Logo__
 
-  - Featured at the top left of the page, the HLL logo lets users know the name of the quiz and podcast. To the right of the logo a title is also included in case users are not familair with the podcast.
+  - Featured at the top left of the page, the HLL logo lets users know the name of the quiz and podcast. To the right of the logo a title is also included in case users are not familair with the podcast. Clicking the logo brings you to the Spoityf homepage of our podcast.
 
 ![Logo](/assets/images/hll-logo.jpeg)
 
@@ -130,8 +130,13 @@ __Social Links__
 ### Lighthouse Testing
 
 - Used Lighthouse to test performance on Desktop and Mobile.
-- ![Desktop Results](/assets/images/lighthouse-desktop.png)
-- ![Mobile Results](/assets/images/lighthouse-mobile.png)
+- Desktop
+
+![Desktop Results](/assets/images/lighthouse-desktop.png)
+
+- Mobile 
+
+![Mobile Results](/assets/images/lighthouse-mobile.png)
 
 ### Validator Testing 
 

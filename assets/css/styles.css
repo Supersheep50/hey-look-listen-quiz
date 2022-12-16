@@ -282,7 +282,7 @@ h3 {
 }
 
 /** - Media Queries **/
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1885px) {
     .background-photo {
         width: auto;
         height: auto;
