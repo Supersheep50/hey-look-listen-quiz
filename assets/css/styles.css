@@ -224,6 +224,7 @@ h1 {
 .faq-p {
     text-align: center;
     width: 50%;
+    font-size: xx-large;
 }
 
 .about-photo,
@@ -329,17 +330,26 @@ h1 {
         max-width: 100%;
         max-height: 100%;
     }
+
+    .about-p,
+    .rules-p,
+    .faq-p {
+        width: fit-content;
+    }
 }
 
-.about-p,
-.rules-p,
-.faq-p {
-    text-align: center;
-}
 
 @media screen and (max-width:550px) {
     .nav-links {
         display: flex;
         flex-direction: column;
+    }
+
+    .about-p,
+    .rules-p,
+    .faq-p {
+        text-align: center;
+        font-size: small;
+        width: fit-content;
     }
 }
