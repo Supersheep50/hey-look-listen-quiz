@@ -150,6 +150,7 @@ __Social Links__
 - Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
 - Timer was not counting down from 60 and acting erratically when starting a new game. I added in specific code to ensure the timer restarted from 60 when hitting Play Again or Begin Quiz.
 - Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
+- Lighthouse testing score was slow. Converted photos to Webp and greatly improved score.
 - Play Again button would only work when all 20 questions had been answered - NOT FIXED
 - Score counter didnt stop at 20 after you kept clicking the right answer when the quiz was over.
 - 
