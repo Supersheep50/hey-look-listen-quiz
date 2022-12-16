@@ -65,8 +65,10 @@ h1 {
 
 /** Background Photo **/
 .background-photo {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     background-position: center 100%;
     text-align: center;
     color: white;
@@ -280,8 +282,7 @@ h3 {
 }
 
 /** - Media Queries **/
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1350px) {
     .background-photo {
         width: auto;
         height: auto;
@@ -340,9 +341,17 @@ h3 {
 
 
 @media screen and (max-width:550px) {
+
     .nav-links {
         display: flex;
         flex-direction: column;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .about-p,
@@ -360,4 +369,5 @@ h3 {
     .btn {
         height: fit-content;
     }
+
 }

@@ -6,6 +6,8 @@ The questions vary in difficult but the most important thing is to have fun! Som
 
 The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to code something for it for a long time and a quiz felt likke the best idea!
 
+Live Site [here] (https://supersheep50.github.io/hey-look-listen-quiz/)
+
 ## Wireframes
 
 - I had wireframes created for desktop, tablet and phone using Balsamiq but sadly they were lost when I was made redundant from Stripe. They were all on my work laptop.
@@ -127,7 +129,9 @@ __Social Links__
 
 ### Lighthouse Testing
 
-- 
+- Used Lighthouse to test performance on Desktop and Mobile.
+- Desktop Results [here](/assets/images/lighthouse-desktop.png)
+- Mobile Results [here](/assets/images/lighthouse-mobile.png)
 
 ### Validator Testing 
 
@@ -138,19 +142,21 @@ __Social Links__
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
     - [Results](/assets/images/w3c-css-results.png)
 - JavaScript
-    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+    - No errors were found when passing through the official [Jshint validator](/assets/images/jshint-testing.png)
       - The following metrics were returned: 
-      - There are 11 functions in this file.
-      - Function with the largest signature takes 2 arguments, while the median is 0.
-      - Largest function has 10 statements in it, while the median is 3.
-      - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
-
+      - There are 24 functions in this file.
+      - Function with the largest signature take 0 arguments, while the median is 0.
+      - Function with the largest signature take 0 arguments, while the median is 0.
+      - Largest function has 8 statements in it, while the median is 3.
+      - The most complex function has a cyclomatic complexity value of 10 while the median is 2.
+     
 ### Fixed Bugs 
 
 - Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
 - Timer was not counting down from 60 and acting erratically when starting a new game. I added in specific code to ensure the timer restarted from 60 when hitting Play Again or Begin Quiz.
 - Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
 - Lighthouse testing score was slow. Converted photos to Webp and greatly improved score.
+- Lighthouse testing showed accessiblity was slow. Added the correct amount of alt tags.
 - Play Again button would only work when all 20 questions had been answered - NOT FIXED
 - Score counter didnt stop at 20 after you kept clicking the right answer when the quiz was over.
 - 
