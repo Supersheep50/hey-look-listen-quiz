@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 /** Begin Quiz */
 function beginQuiz() {
+    hideActionButtons();
     runTimer();
     renderNextQuestion();
 }
@@ -113,16 +114,9 @@ function checkAnswer() {
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
-/**Styles Play Again button when in use */
-function styleActionButton() {
-    this.style.backgroundColor = "green";
-}
-/**Removes styling from Play Again button */
-function unStyleActionButton() {
-    this.style.backgroundColor = "null";
-}
+
 /**Adds functionality for Play Again button an hides other buttons */
-function hideButtons() {
+function hideAnswerButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";
     }
@@ -131,6 +125,17 @@ function hideButtons() {
     playAgainButton.addEventListener("click", newGame);
 }
 
+function hideActionButtons() {
+    for (let actionButton of actionButtons) {
+        actionButton.style.display = "none";
+    }
+}
+
+function displayActionButtons() {
+    for (let actionButton of actionButtons) {
+        actionButton.style.display = "inline-block";
+    }
+}
 /**Share Quiz code - Code adapted from Dev.to (Credit in ReadMe) */
 let shareBtn = document.querySelector('.share-quiz');
 let shareOptions = document.querySelector('.share-options');
@@ -145,14 +150,15 @@ function newGame() {
     repeatedQuestion.length = null;
     scoreCount = 0;
     score.innerText = scoreCount;
+    hideActionButtons();
     resetTimer();
     renderNextQuestion();
 }
 
 /**Resets button styling once you start a new game */
 function resetButtons() {
-    for (let button of buttons) {
-        button.style = null;
+    for (let answerButton of answerButtons) {
+        answerButton.style = null;
     }
 }
 
@@ -190,5 +196,6 @@ function displayResult() {
     } else if (scoreCount >= 1 && score < 5) {
         questionBox.innerText = "Yikes!!!";
     }
-    hideButtons();
+    hideAnswerButtons();
+    displayActionButtons();
 }
