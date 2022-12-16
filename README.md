@@ -6,7 +6,7 @@ The questions vary in difficult but the most important thing is to have fun! Som
 
 The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to code something for it for a long time and a quiz felt likke the best idea!
 
-Live Site [here] (https://supersheep50.github.io/hey-look-listen-quiz/)
+Live Site [here](https://supersheep50.github.io/hey-look-listen-quiz/)
 
 ## Wireframes
 
@@ -17,9 +17,9 @@ Live Site [here] (https://supersheep50.github.io/hey-look-listen-quiz/)
 ## Features 
 
  __Responsive on all device sizes:__
-    - [Mobile](/assets/images/mobile-responsive.png) 
+    - [Mobile](/assets/images/mobile-responsiveness.png) 
     - [Tablet](/assets/images/tablet-responsiveness.png) 
-    - [Desktop](/assets/images/desktop-responsiveness.png)
+    - [Desktop](/assets/images/desktop-responiveness.png)
 
 __HLL Logo__
 
@@ -95,7 +95,7 @@ __Social Links__
 
 ### Features Left to Implement
 
-- I had hoped to integrate a way for people to also listen to the podcast while playing th quiz but ultimately ran out of time before I could make that happen. I hope to add this at a later date.
+- I had hoped to integrate a way for people to also listen to the podcast while playing the quiz but ultimately ran out of time before I could make that happen. I hope to add this at a later date.
 - A highscore board is something I hope to add at a later date. 
 
 ## Technologies Used
@@ -109,7 +109,7 @@ __Social Links__
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Ubuntu'font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Orbitron'font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used throughout the website to add social media icons and logos for aesthetic and UX purposes.
 1. [Git](https://git-scm.com/)
@@ -130,8 +130,8 @@ __Social Links__
 ### Lighthouse Testing
 
 - Used Lighthouse to test performance on Desktop and Mobile.
-- Desktop Results [here](/assets/images/lighthouse-desktop.png)
-- Mobile Results [here](/assets/images/lighthouse-mobile.png)
+- ![Desktop Results](/assets/images/lighthouse-desktop.png)
+- ![Mobile Results](/assets/images/lighthouse-mobile.png)
 
 ### Validator Testing 
 
@@ -157,9 +157,8 @@ __Social Links__
 - Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
 - Lighthouse testing score was slow. Converted photos to Webp and greatly improved score.
 - Lighthouse testing showed accessiblity was slow. Added the correct amount of alt tags.
-- Play Again button would only work when all 20 questions had been answered - NOT FIXED
-- Score counter didnt stop at 20 after you kept clicking the right answer when the quiz was over.
-- 
+
+
 
 ### Unfixed Bugs
 
@@ -169,7 +168,7 @@ __Social Links__
 
 The project was deployed to GitHub Pages using the following steps...
 
-Log in to GitHub and locate the [GitHub Repository]
+Log in to GitHub and locate the [hey-look-listen repo](https://github.com/Supersheep50/hey-look-listen-quiz)
 At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 Click the the "Pages" link on the left-hand side of the screen.
 Under "Source", click the dropdown called "None" and select "Main Branch".
