@@ -129,6 +129,10 @@ function hidePlayAgainButton() {
     playAgainButton.style.display = "none";
 }
 
+function hideStartGameButton() {
+    startGame.style.display = "none";
+
+}
 
 function displayActionButtons() {
     for (let actionButton of actionButtons) {
@@ -204,4 +208,5 @@ function displayResult() {
     }
     hideAnswerButtons();
     displayActionButtons();
+    hideStartGameButton();
 }
