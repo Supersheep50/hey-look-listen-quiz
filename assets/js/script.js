@@ -1,5 +1,4 @@
 /* jshint esversion: 11 */
-
 /**Declarations */
 let startGame = document.getElementsByClassName("begin-quiz")[0];
 let questionBox = document.getElementsByClassName("question-box")[0];
@@ -29,7 +28,9 @@ function beginQuiz() {
 }
 /**Makes sure the quiz recognizes a max of 20 questions */
 function isMaximumQuestionsLimitReached() {
+    clearTimeout(resetTimer);
     if (repeatedQuestion.length >= 20) {
+        clearTimeout(resetTimer);
         return true;
     }
 }
@@ -39,6 +40,7 @@ function renderNextQuestion() {
         displayResult();
     } else {
         resetButtons();
+        clearTimeout(resetTimer);
         displayQuestion();
     }
 }
@@ -84,7 +86,6 @@ function handleMouseEvent() {
         answerButton.addEventListener("mousedown", checkAnswer);
         answerButton.addEventListener("mouseup", renderNextQuestion);
     }
-
 }
 
 function handleTouchEvent() {
@@ -108,7 +109,7 @@ function checkAnswer() {
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
-/**Adds functionality for Play Again button an hides other buttons */
+/**Adds functionality for Play Again button and hide other buttons - Code adapted from StackOverFlow - credit in Readme */
 function hideAnswerButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.display = "none";
@@ -144,6 +145,7 @@ shareBtn.addEventListener('click', () => {
 
 /**Function for starting a New Game */
 function newGame() {
+    let timer;
     console.log("newGame is running");
     repeatedQuestion.length = null;
     scoreCount = 0;
@@ -151,6 +153,7 @@ function newGame() {
     hideActionButtons();
     displayAnswerButtons();
     resetTimer();
+    clearTimeout(resetTimer);
     renderNextQuestion();
 }
 /**Resets button styling once you start a new game */
@@ -161,13 +164,13 @@ function resetButtons() {
 }
 /**Timer - some code from StackOverflow (in Readme Credits)*/
 function runTimer() {
-    let timer = 60;
+    let timer = 120;
     let interval = setInterval(function () {
         document.getElementById('timer').innerHTML = timer;
         timer--;
         if (timer === -1) {
             document.getElementById('timer').innerHTML = timer;
-            clearTimeout(interval);
+            clearTimeout(resetTimer);
             alert("Time up! Game Over!");
             displayResult();
         }
@@ -176,6 +179,8 @@ function runTimer() {
 
 function resetTimer() {
     document.getElementById("timer").style.display = "flex";
+    clearTimeout(timer);
+    timer = 120;
     runTimer();
 }
 /**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
@@ -193,4 +198,6 @@ function displayResult() {
     }
     hideAnswerButtons();
     displayActionButtons();
+    clearTimeout(resetTimer);
+
 }

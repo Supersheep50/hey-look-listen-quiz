@@ -69,7 +69,7 @@ let questions = [{
     "answer": "Minecraft"
 }, {
     "question": "Who voices Batman in the video-game Batman: Arkham Asylum?",
-    "choices": ["Ben Afleck", "Christian Bale", "Kevin Conroy"],
+    "choices": ["Ben Affleck", "Christian Bale", "Kevin Conroy"],
     "answer": "Kevin Conroy"
 }, {
     "question": "Where can you listen to the HLL Podcast?",

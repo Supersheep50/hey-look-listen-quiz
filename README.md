@@ -162,8 +162,8 @@ __Social Links__
 - Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
 - Lighthouse testing score was slow. Converted photos to Webp and greatly improved score.
 - Lighthouse testing showed accessiblity was slow. Added the correct amount of alt tags.
-
-
+- Got feedback that 60 seconds to do the quiz was too hard. Changed to 120 seconds.
+- Timer didn't finish after quiz ended. Hitting Play Again would cause two timers to run at the same time.
 
 ### Unfixed Bugs
 
@@ -205,6 +205,7 @@ Scroll back down through the page to locate the now published site link in the "
 - Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
 - Code adapted for Share Quiz function found [here](https://dev.to/kunaal438/how-to-make-a-share-button-html-awesome-button-effect-css-modern-web-coding-tutorial-2app) on Dev.to.
 - Touch functionlaity added from Codeburst [here](https://codeburst.io/the-only-way-to-detect-touch-with-javascript-7791a3346685) and StackOverFlow [here](https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript)
+- Code adapted from StackOverFlow to hide buttons found [here](https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript).
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 
 ## Thank you!
