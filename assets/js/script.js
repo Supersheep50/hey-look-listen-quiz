@@ -10,6 +10,7 @@ let actionButtons = document.getElementsByClassName("action-btn");
 let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
+let interval;
 let currentQuestion = null;
 let repeatedQuestion = [];
 
@@ -28,9 +29,9 @@ function beginQuiz() {
 }
 /**Makes sure the quiz recognizes a max of 20 questions */
 function isMaximumQuestionsLimitReached() {
-    clearTimeout(resetTimer);
+    clearTimeout(interval);
     if (repeatedQuestion.length >= 20) {
-        clearTimeout(resetTimer);
+        clearTimeout(interval);
         return true;
     }
 }
@@ -40,7 +41,7 @@ function renderNextQuestion() {
         displayResult();
     } else {
         resetButtons();
-        clearTimeout(resetTimer);
+        clearTimeout(interval);
         displayQuestion();
     }
 }
@@ -143,6 +144,15 @@ shareBtn.addEventListener('click', () => {
     shareOptions.classList.toggle('active');
 });
 
+function copyQuiz() {
+
+    let copyText = document.getElementById("copy-quiz");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the text: " + copyText.value);
+}
+
 /**Function for starting a New Game */
 function newGame() {
     let timer;
@@ -153,7 +163,7 @@ function newGame() {
     hideActionButtons();
     displayAnswerButtons();
     resetTimer();
-    clearTimeout(resetTimer);
+    // clearTimeout(interval);
     renderNextQuestion();
 }
 /**Resets button styling once you start a new game */
@@ -170,16 +180,18 @@ function runTimer() {
         timer--;
         if (timer === -1) {
             document.getElementById('timer').innerHTML = timer;
-            clearTimeout(resetTimer);
+            clearTimeout(interval);
             alert("Time up! Game Over!");
             displayResult();
         }
     }, 1000);
+    console.log(interval);
+    // return interval
 }
 
 function resetTimer() {
     document.getElementById("timer").style.display = "flex";
-    clearTimeout(timer);
+    clearTimeout(interval);
     timer = 120;
     runTimer();
 }
@@ -198,6 +210,6 @@ function displayResult() {
     }
     hideAnswerButtons();
     displayActionButtons();
-    clearTimeout(resetTimer);
+    // clearTimeout(interval);
 
 }
