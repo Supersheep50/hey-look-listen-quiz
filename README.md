@@ -99,6 +99,8 @@ __Social Links__
 
 - I had hoped to integrate a way for people to also listen to the podcast while playing the quiz but ultimately ran out of time before I could make that happen. I hope to add this at a later date.
 - A highscore board is something I hope to add at a later date. 
+- Tried to add question counter but ran out of time!
+- Tried to add scrolling header but ran out of time to implement.
 
 ## Technologies Used
 

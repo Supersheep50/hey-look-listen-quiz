@@ -89,16 +89,24 @@ h1 {
     padding: 30px;
     border: black 4px solid;
     border-radius: 50px;
+
+}
+
+.question-box {
+    min-height: 75px;
 }
 
 .question-box,
 h3 {
     font-weight: bolder;
     font-size: xx-large;
+
+
 }
 
 .answer-btn {
     display: none;
+    font-size: small;
 }
 
 /** Button Styling - Some code used from Love Maths **/
@@ -351,8 +359,10 @@ h3 {
     }
 }
 
-
 @media screen and (max-width:550px) {
+    .question-box {
+        min-height: 180px;
+    }
 
     .nav-links {
         display: flex;

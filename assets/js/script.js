@@ -16,8 +16,9 @@ var timers = [];
 /**Load the DOM */
 document.addEventListener('DOMContentLoaded', () => {
     startGame.addEventListener("click", beginQuiz, {
-        once: true
+        once: true,
     });
+    hidePlayAgainButton();
 });
 /** Begin Quiz */
 function beginQuiz() {
@@ -123,6 +124,11 @@ function hideActionButtons() {
         actionButton.style.display = "none";
     }
 }
+
+function hidePlayAgainButton() {
+    playAgainButton.style.display = "none";
+}
+
 
 function displayActionButtons() {
     for (let actionButton of actionButtons) {
