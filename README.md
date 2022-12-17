@@ -67,6 +67,7 @@ __Share Quiz__
 - There is a button for users to share the quiz with friends on social media or copy the link.
 - By clicking the copy button the user will copy the link to the quiz. 
 - Clicking the social media icons lets them go to their social media homepage and sign in. They can then paste the link.
+- There is also a close feature that you can click.
 
 ![Timer](/assets/images/share-quiz.png)
 
@@ -168,6 +169,7 @@ __Social Links__
 - Lighthouse testing showed accessiblity was low. Added the correct amount of alt tags.
 - Got feedback that 60 seconds to do the quiz was too hard. Changed to 120 seconds.
 - Timer didn't finish after quiz ended. Hitting Play Again would cause two timers to run at the same time - This turned out to be a very complex bug. After hours of researching using StackOverFlow, MDN and Open AI, I asked Tutor Support and we finally got there after 5 hours on the chat! We had to use a workaround with resetting the timer as my timer was originally created within a function and could not be implemented globally. 
+- When the Share Results wasnt clicked you could still click the social media icons in the div. Added code to properly hide them when not in use.
 
 ### Unfixed Bugs
 
