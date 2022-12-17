@@ -194,7 +194,7 @@ function displayResult() {
     } else if (scoreCount >= 6 && scoreCount < 10) {
         questionBox.innerText = "Have you ever played a videogame?";
     } else {
-        questionBox.innerText = "Yikes!!!";
+        questionBox.innerText = "Yikes!!! Might be time to take a break from quizzes?";
     }
     hideAnswerButtons();
     displayActionButtons();
