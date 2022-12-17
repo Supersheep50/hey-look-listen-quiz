@@ -152,16 +152,16 @@ __Social Links__
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
     - [Results](/assets/images/w3c-css-results.png)
 - JavaScript
-    [Jshint validator](/assets/images/jshint-testing.png)
-      - The following metrics were returned: 
-      - There are 28 functions in this file.
-      - Function with the largest signature take 0 arguments, while the median is 0.
-      - Function with the largest signature take 0 arguments, while the median is 0.
-      - Largest function has 10 statements in it, while the median is 3.
-      - The most complex function has a cyclomatic complexity value of 8 while the median is 1.5.
-      - Interval undefined - this is defined within the function is used. This was code added with tutor support in a support session. 
-      - Questions undefined - this is referring to questions.js which I am importing from another file after advice from mentor.
-      - CopyQuiz unused - is called from within the HTMl.  
+    - [Jshint validator](/assets/images/jshint-testing.png)
+    - The following metrics were returned: 
+    - There are 28 functions in this file.
+    - Function with the largest signature take 0 arguments, while the median is 0.
+    - Function with the largest signature take 0 arguments, while the median is 0.
+    - Largest function has 10 statements in it, while the median is 3.
+    - The most complex function has a cyclomatic complexity value of 8 while the median is 1.5.
+    - Interval undefined - this is defined within the function is used. This was code added with tutor support in a support session. 
+    - Questions undefined - this is referring to questions.js which I am importing from another file after advice from mentor.
+    - CopyQuiz unused - is called from within the HTML.  
      
 ### Fixed Bugs 
 
