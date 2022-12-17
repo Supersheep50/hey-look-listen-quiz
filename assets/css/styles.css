@@ -128,8 +128,6 @@ h3 {
 
 /** Share Quiz styling - Code adapted from Dev.to - Credit in ReadMe**/
 .social-media {
-    list-style: none;
-    font-size: x-large;
     letter-spacing: 3px;
     opacity: 0;
     transition: .5s;
@@ -141,6 +139,13 @@ h3 {
     flex-wrap: wrap;
     margin: 10px 0;
 
+}
+
+.social-media li {
+    list-style: none;
+    font-size: x-large;
+    letter-spacing: 3px;
+    display: inline;
 }
 
 .social-media :hover {
