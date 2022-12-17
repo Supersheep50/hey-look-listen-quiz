@@ -205,6 +205,7 @@ Scroll back down through the page to locate the now published site link in the "
 - Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
 - Code adapted for Share Quiz function found [here](https://dev.to/kunaal438/how-to-make-a-share-button-html-awesome-button-effect-css-modern-web-coding-tutorial-2app) on Dev.to.
 - Touch functionlaity added from Codeburst [here](https://codeburst.io/the-only-way-to-detect-touch-with-javascript-7791a3346685) and StackOverFlow [here](https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript)
+- Code adapted from MDN [here](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp) to add copy button.
 - Code adapted from StackOverFlow to hide buttons found [here](https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript).
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
 

@@ -128,6 +128,9 @@ h3 {
 
 /** Share Quiz styling - Code adapted from Dev.to - Credit in ReadMe**/
 .social-media {
+    list-style: none;
+    font-size: x-large;
+    letter-spacing: 3px;
     opacity: 0;
     transition: .5s;
     transition-delay: 0s;
@@ -137,6 +140,11 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     margin: 10px 0;
+
+}
+
+.social-media :hover {
+    color: gold;
 }
 
 .link-container {
@@ -153,7 +161,6 @@ h3 {
     overflow: hidden;
     padding: 0 10px;
 }
-
 
 .share-options.active .social-media,
 .share-options.active .link-container {

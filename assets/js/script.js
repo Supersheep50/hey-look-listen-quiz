@@ -191,7 +191,7 @@ function runTimer() {
 
 function resetTimer() {
     document.getElementById("timer").style.display = "flex";
-    clearTimeout(interval);
+    clearInterval(interval);
     timer = 120;
     runTimer();
 }
