@@ -159,7 +159,7 @@ __Social Links__
       - Function with the largest signature take 0 arguments, while the median is 0.
       - Largest function has 10 statements in it, while the median is 3.
       - The most complex function has a cyclomatic complexity value of 8 while the median is 1.5.
-      - Interval undefined - this is defined within the function is used.
+      - Interval undefined - this is defined within the function is used. This was code added with tutor support in a support session. 
       - Questions undefined - this is referring to questions.js which I am importing from another file after advice from mentor.
       - CopyQuiz unused - is called from within the HTMl.  
      
