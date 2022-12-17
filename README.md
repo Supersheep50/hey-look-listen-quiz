@@ -23,7 +23,7 @@ Live Site [here](https://supersheep50.github.io/hey-look-listen-quiz/)
 
 __HLL Logo__
 
-  - Featured at the top left of the page, the HLL logo lets users know the name of the quiz and podcast. To the right of the logo a title is also included in case users are not familair with the podcast. Clicking the logo brings you to the Spoityf homepage of our podcast.
+  - Featured at the top left of the page, the HLL logo lets users know the name of the quiz and podcast. To the right of the logo a title is also included in case users are not familair with the podcast. Clicking the logo brings you to the Spotify homepage of our podcast.
 
 ![Logo](/assets/images/hll-logo.jpeg)
 
@@ -65,6 +65,8 @@ __The Timer__
 __Share Quiz__
 
 - There is a button for users to share the quiz with friends on social media or copy the link.
+- By clicking the copy button the user will copy the link to the quiz. 
+- Clicking the social media icons lets them go to their social media homepage and sign in. They can then paste the link
 
 ![Timer](/assets/images/share-quiz.png)
 
@@ -152,22 +154,22 @@ __Social Links__
       - There are 24 functions in this file.
       - Function with the largest signature take 0 arguments, while the median is 0.
       - Function with the largest signature take 0 arguments, while the median is 0.
-      - Largest function has 8 statements in it, while the median is 3.
-      - The most complex function has a cyclomatic complexity value of 10 while the median is 2.
+      - Largest function has 10 statements in it, while the median is 3.
+      - The most complex function has a cyclomatic complexity value of 8 while the median is 2.
      
 ### Fixed Bugs 
 
-- Quiz was not recoginizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
+- Quiz was not recognizing the correct answer. My styling on my answers was causing right answers to be seen as wrong answers.
 - Timer was not counting down from 60 and acting erratically when starting a new game. I added in specific code to ensure the timer restarted from 60 when hitting Play Again or Begin Quiz.
 - Background photo and Logo not showing up on live page - fixed by removing a / from my img tags in the html.
 - Lighthouse testing score was slow. Converted photos to Webp and greatly improved score.
-- Lighthouse testing showed accessiblity was slow. Added the correct amount of alt tags.
+- Lighthouse testing showed accessiblity was low. Added the correct amount of alt tags.
 - Got feedback that 60 seconds to do the quiz was too hard. Changed to 120 seconds.
-- Timer didn't finish after quiz ended. Hitting Play Again would cause two timers to run at the same time.
+- Timer didn't finish after quiz ended. Hitting Play Again would cause two timers to run at the same time - This turned out to be a very complex bug. After hours of researching using StackOverFlow, MDN and Open AI, I asked Tutor Support and we finally got there after 5 hours on the chat! We had to use a workaround with reseting the timer as my timer was originally created within a function and could not be implemented globally. 
 
 ### Unfixed Bugs
 
-- 
+- None that I am aware of after lots and lots of testing. 
 
 ## Deployment
 
@@ -198,7 +200,7 @@ Scroll back down through the page to locate the now published site link in the "
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)for general debugging.
 - [W3-Schools](https://www.w3schools.com/) for some helpful tips on building quizzes in JS.
 - Some code used from course material and previous project Love Maths to build the score counter. 
-- Code to build Timer used from StackOverflow [here](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript) and [here](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/)
+- Code to build Timer used from StackOverflow [here](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript) and [here](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/). Also credit to GEr from Tutor Support for helping me out in parts here.
 - Code from this StackOverFlow [page](https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript) used to code Display Results section in my JS.
 - Some code used from this StackOverFlow [page](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array) to pull random questions for quiz.
 - [Code Institute Sampe Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
@@ -211,6 +213,6 @@ Scroll back down through the page to locate the now published site link in the "
 
 ## Thank you!
 
-- Massive thank you to my partner Steph! She was a constant source of advice, debugging and ideas. 
-- My mentor Tim for giving me great guidance and advice. 
+- Massive thank you to my partner Steph! She was a constant source of advice, debugging and ideas. She is also the most patient person to ever exist.
+- My mentor Tim for giving me great guidance and advice and JJ for his review! 
  

@@ -10,10 +10,9 @@ let actionButtons = document.getElementsByClassName("action-btn");
 let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
-let interval;
 let currentQuestion = null;
 let repeatedQuestion = [];
-
+var timers = [];
 /**Load the DOM */
 document.addEventListener('DOMContentLoaded', () => {
     startGame.addEventListener("click", beginQuiz, {
@@ -24,24 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
 function beginQuiz() {
     hideActionButtons();
     displayAnswerButtons();
-    let timer = runTimer();
-    renderNextQuestion(timer);
+    runTimer();
+    renderNextQuestion();
 }
 /**Makes sure the quiz recognizes a max of 20 questions */
-function isMaximumQuestionsLimitReached(timer) {
-    clearTimeout(interval);
+function isMaximumQuestionsLimitReached() {
     if (repeatedQuestion.length >= 20) {
-        clearInterval(timer);
+        for (var i = 0; i < timers.length; i++) {
+            clearTimeout(timers[i]);
+        }
         return true;
     }
 }
 /** Renders the next question */
-function renderNextQuestion(timer) {
-    if (isMaximumQuestionsLimitReached(timer)) {
+function renderNextQuestion() {
+    if (isMaximumQuestionsLimitReached()) {
         displayResult();
     } else {
         resetButtons();
-        clearTimeout(interval);
         displayQuestion();
     }
 }
@@ -145,14 +144,12 @@ shareBtn.addEventListener('click', () => {
 });
 
 function copyQuiz() {
-
     let copyText = document.getElementById("copy-quiz");
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
     alert("Copied the text: " + copyText.value);
 }
-
 /**Function for starting a New Game */
 function newGame() {
     let timer;
@@ -162,8 +159,8 @@ function newGame() {
     score.innerText = scoreCount;
     hideActionButtons();
     displayAnswerButtons();
-    resetTimer();
-    // clearTimeout(interval);
+    runTimer();
+    document.getElementById("timer").style.display = "block";
     renderNextQuestion();
 }
 /**Resets button styling once you start a new game */
@@ -175,41 +172,30 @@ function resetButtons() {
 /**Timer - some code from StackOverflow (in Readme Credits)*/
 function runTimer() {
     let timer = 120;
-    let interval = setInterval(function () {
+    timers.push(interval = setInterval(function () {
         document.getElementById('timer').innerHTML = timer;
         timer--;
-        if (timer === -1) {
+        if (timer <= -1) {
             document.getElementById('timer').innerHTML = timer;
-            clearTimeout(interval);
+            window.clearTimeout(interval);
             alert("Time up! Game Over!");
             displayResult();
         }
-    }, 1000);
-    console.log(interval);
-    // return interval
-}
-
-function resetTimer() {
-    document.getElementById("timer").style.display = "flex";
-    clearInterval(interval);
-    timer = 120;
-    runTimer();
+    }, 1000));
 }
 /**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
 function displayResult() {
     if (scoreCount >= 19) {
         questionBox.innerText = "Congrats! You don't suck!";
-    } else if (scoreCount >= 15 && scoreCount < 19) {
+    } else if (scoreCount >= 15 && score < 19) {
         questionBox.innerText = "Congrats! You only suck a bit!";
-    } else if (scoreCount >= 10 && scoreCount < 15) {
+    } else if (scoreCount >= 10 && score < 15) {
         questionBox.innerText = "Oh this isn't going well is it?";
-    } else if (scoreCount >= 6 && scoreCount < 10) {
+    } else if (scoreCount >= 6 && score < 10) {
         questionBox.innerText = "Have you ever played a videogame?";
     } else {
         questionBox.innerText = "Yikes!!!";
     }
     hideAnswerButtons();
     displayActionButtons();
-    // clearTimeout(interval);
-
 }
