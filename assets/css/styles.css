@@ -1,6 +1,5 @@
 html,
 body {
-
     max-width: 100%;
     max-height: 100%;
     overflow-x: hidden;
@@ -89,7 +88,6 @@ h1 {
     padding: 30px;
     border: black 4px solid;
     border-radius: 50px;
-
 }
 
 .question-box {
@@ -100,8 +98,6 @@ h1 {
 h3 {
     font-weight: bolder;
     font-size: xx-large;
-
-
 }
 
 .answer-btn {
@@ -146,7 +142,6 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     margin: 10px 0;
-
 }
 
 .social-media li {
@@ -244,7 +239,6 @@ h3 {
     background-color: gold;
     font-size: xx-large;
     font-weight: bolder;
-
 }
 
 .rules {
@@ -338,7 +332,6 @@ h3 {
         height: auto;
         max-width: 100%;
         max-height: 100%;
-
     }
 
     .about-photo,
@@ -391,5 +384,4 @@ h3 {
     .btn {
         height: fit-content;
     }
-
 }

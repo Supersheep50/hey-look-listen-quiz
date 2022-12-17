@@ -16,6 +16,7 @@ let playAgainButton = document.getElementsByClassName("play-again")[0];
 let currentQuestion = null;
 let repeatedQuestion = [];
 var timers = [];
+
 /**Load the DOM */
 document.addEventListener('DOMContentLoaded', () => {
     startGame.addEventListener("click", beginQuiz, {
@@ -34,6 +35,7 @@ function beginQuiz() {
     runTimer();
     renderNextQuestion();
 }
+
 /**Makes sure the quiz recognizes a max of 20 questions */
 function isMaximumQuestionsLimitReached() {
     if (repeatedQuestion.length >= 20) {
@@ -43,6 +45,7 @@ function isMaximumQuestionsLimitReached() {
         return true;
     }
 }
+
 /** Renders the next question */
 function renderNextQuestion() {
     if (isMaximumQuestionsLimitReached()) {
@@ -52,6 +55,7 @@ function renderNextQuestion() {
         displayQuestion();
     }
 }
+
 /** Shows Questions */
 function displayQuestion() {
     currentQuestion = getRandomQuestion();
@@ -59,6 +63,7 @@ function displayQuestion() {
     displayAnswers();
     handleClickEvent();
 }
+
 /**Add ability to click using a mouse or touch (Code adapted from MDN & Codeburst - credit in Readme) */
 function handleClickEvent() {
     if (window.isTouchScreen) {
@@ -67,12 +72,14 @@ function handleClickEvent() {
         handleMouseEvent();
     }
 }
+
 /**Shows Answers */
 function displayAnswers() {
     buttonA.innerText = currentQuestion.choices[0];
     buttonB.innerText = currentQuestion.choices[1];
     buttonC.innerText = currentQuestion.choices[2];
 }
+
 /**Pulls a random question from the list */
 function getRandomQuestion() {
     currentQuestion = questions[Math.floor(Math.random() * questions.length)];
@@ -83,6 +90,7 @@ function getRandomQuestion() {
         return currentQuestion;
     }
 }
+
 /** Touch funtionality - code adapted from Codeburst - Credit in Readme */
 window.addEventListener('touchstart', function onFirstTouch() {
     this.window.isTouchScreen = true;
@@ -102,6 +110,7 @@ function handleTouchEvent() {
         answerButton.addEventListener("touchend", renderNextQuestion);
     }
 }
+
 /** Checks if its the correct answer and adds 1 to the score if so (Some code from Love Maths project - credit in ReadMe) */
 function checkAnswer() {
     let answer = currentQuestion.answer;
@@ -113,10 +122,12 @@ function checkAnswer() {
         this.style.backgroundColor = "red";
     }
 }
+
 /**Funciton to add to the scoreboard (Code from Love Maths prokect - credit in ReadMe) */
 function incrementScore() {
     score.innerText = ++scoreCount;
 }
+
 /**Adds functionality for Play Again button and hide other buttons - Code adapted from StackOverFlow - credit in Readme */
 function hideAnswerButtons() {
     for (let answerButton of answerButtons) {
@@ -138,17 +149,14 @@ function hidePlayAgainButton() {
 
 function hideStartGameButton() {
     startGame.style.display = "none";
-
 }
 
 function hideShareOptions() {
     shareOptions.style.display = "none";
-
 }
 
 function displayShareOptions() {
     shareOptions.style.display = "block";
-
 }
 
 function displayActionButtons() {
@@ -162,13 +170,13 @@ function displayAnswerButtons() {
         answerButton.style.display = "inline-block";
     }
 }
+
 /**Share Quiz code - Code adapted from Dev.to (Credit in ReadMe) */
-
-
 shareBtn.addEventListener('click', () => {
     displayShareOptions();
     shareOptions.classList.toggle('active');
 });
+
 
 function copyQuiz() {
     let copyText = document.getElementById("copy-quiz");
@@ -177,9 +185,9 @@ function copyQuiz() {
     navigator.clipboard.writeText(copyText.value);
     alert("Copied the text: " + copyText.value);
 }
+
 /**Function for starting a New Game */
 function newGame() {
-    let timer;
     console.log("newGame is running");
     repeatedQuestion.length = null;
     scoreCount = 0;
@@ -190,12 +198,14 @@ function newGame() {
     document.getElementById("timer").style.display = "block";
     renderNextQuestion();
 }
+
 /**Resets button styling once you start a new game */
 function resetButtons() {
     for (let answerButton of answerButtons) {
         answerButton.style.backgroundColor = null;
     }
 }
+
 /**Timer - some code from StackOverflow (in Readme Credits)*/
 function runTimer() {
     let timer = 120;
@@ -210,6 +220,7 @@ function runTimer() {
         }
     }, 1000));
 }
+
 /**Quiz results (Some code used here from StackOverFlow - credit in Readme) */
 function displayResult() {
     if (scoreCount >= 19) {
