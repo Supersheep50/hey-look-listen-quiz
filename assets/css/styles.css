@@ -348,7 +348,7 @@ h3 {
     .about-p,
     .rules-p,
     .faq-p {
-        width: fit-content;
+        width: auto;
     }
 }
 

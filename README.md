@@ -124,6 +124,8 @@ __Social Links__
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
     - I sadly lost my Balsamiq Wireframes after being made redundant from my last job and my laptop wiped clean.
+1. [Favicon.io](https://favicon.io/favicon-converter/)
+    - Favicon used to create my favicon for the page.
 
 ## Testing 
 
