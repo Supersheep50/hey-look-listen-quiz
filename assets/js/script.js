@@ -5,8 +5,11 @@ let questionBox = document.getElementsByClassName("question-box")[0];
 let buttonA = document.getElementsByClassName("btn-a")[0];
 let buttonB = document.getElementsByClassName("btn-b")[0];
 let buttonC = document.getElementsByClassName("btn-c")[0];
+let shareBtn = document.getElementsByClassName("share-quiz")[0];
+let shareOptions = document.getElementsByClassName("share-options")[0];
 let answerButtons = document.getElementsByClassName("answer-btn");
 let actionButtons = document.getElementsByClassName("action-btn");
+let closeOption = document.getElementsByClassName("close-option")[0];
 let score = document.getElementsByClassName("score")[0];
 let scoreCount = parseInt(score.innerText);
 let playAgainButton = document.getElementsByClassName("play-again")[0];
@@ -19,7 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         once: true,
     });
     hidePlayAgainButton();
+    hideShareOptions();
 });
+
+closeOption.addEventListener('click', hideShareOptions);
+
 /** Begin Quiz */
 function beginQuiz() {
     hideActionButtons();
@@ -134,6 +141,16 @@ function hideStartGameButton() {
 
 }
 
+function hideShareOptions() {
+    shareOptions.style.display = "none";
+
+}
+
+function displayShareOptions() {
+    shareOptions.style.display = "block";
+
+}
+
 function displayActionButtons() {
     for (let actionButton of actionButtons) {
         actionButton.style.display = "inline-block";
@@ -146,10 +163,10 @@ function displayAnswerButtons() {
     }
 }
 /**Share Quiz code - Code adapted from Dev.to (Credit in ReadMe) */
-let shareBtn = document.querySelector('.share-quiz');
-let shareOptions = document.querySelector('.share-options');
+
 
 shareBtn.addEventListener('click', () => {
+    displayShareOptions();
     shareOptions.classList.toggle('active');
 });
 
