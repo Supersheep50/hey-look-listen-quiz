@@ -187,11 +187,11 @@ function runTimer() {
 function displayResult() {
     if (scoreCount >= 19) {
         questionBox.innerText = "Congrats! You don't suck!";
-    } else if (scoreCount >= 15 && score < 19) {
+    } else if (scoreCount >= 15 && scoreCount < 19) {
         questionBox.innerText = "Congrats! You only suck a bit!";
-    } else if (scoreCount >= 10 && score < 15) {
+    } else if (scoreCount >= 10 && scoreCount < 15) {
         questionBox.innerText = "Oh this isn't going well is it?";
-    } else if (scoreCount >= 6 && score < 10) {
+    } else if (scoreCount >= 6 && scoreCount < 10) {
         questionBox.innerText = "Have you ever played a videogame?";
     } else {
         questionBox.innerText = "Yikes!!!";

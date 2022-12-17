@@ -4,7 +4,7 @@ The Hey! Look! Listen! Quiz is a mutiple choice quiz game that is based off of t
 
 The questions vary in difficult but the most important thing is to have fun! Some questions include inside jokes for fans of the podcast.
 
-The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a differnet videogame or topic each week and chat about it. I've wanted to code something for it for a long time and a quiz felt likke the best idea!
+The HLL Podcast is a videogame podcast I have been a part of for nearly 2 years. We pick a different videogame or topic each week and chat about it. I've wanted to code something for it for a long time and a quiz felt likke the best idea!
 
 Live Site [here](https://supersheep50.github.io/hey-look-listen-quiz/)
 
@@ -36,27 +36,27 @@ __HLL Logo__
  __The Question section__
 
   - The question section is where users can see the randomly generated questions created by the quiz.
-  - Clicking Being Quiz will start the quiz and display the current question and 3 possible answers. 
+  - Clicking Begin Quiz will start the quiz and display the current question and 3 possible answers. 
   - Users are able to click one of the 3 possible options and get the question right or wrong.
 
 ![Question Section](/assets/images/question-section.png)
 
 __Play Again__
 
-- There is a Play Again button that allows users to quickly reply the game. Clicking this resets the score and timer.
+- There is a Play Again button that allows users to quickly replay the game. Clicking this resets the score and timer.
 
 ![Play Again](/assets/images/play-again.png)
 
  __The Score Area__
 
-  - There is a score at the bottom of the question box that tracks the users current score in the quiz out of 20.
+  - There is a score at the bottom of the question box that tracks the user's current score in the quiz out of 20.
   - The score counter goes up for every right answer and stays the same for every wrong answer.
 
 ![Score Area](/assets/images/score-area.png)
 
 __The Timer__
 
-- At the bottom of the Question Area there is a timer. THe user has 60 seconds to complete the entire quiz. 
+- At the bottom of the Question Area there is a timer. The user has 60 seconds to complete the entire quiz. 
 - The timer starts as soon as the user clicks Begin Quiz.
 - If the timer gets to 0, it's Game Over!
 
@@ -66,7 +66,7 @@ __Share Quiz__
 
 - There is a button for users to share the quiz with friends on social media or copy the link.
 - By clicking the copy button the user will copy the link to the quiz. 
-- Clicking the social media icons lets them go to their social media homepage and sign in. They can then paste the link
+- Clicking the social media icons lets them go to their social media homepage and sign in. They can then paste the link.
 
 ![Timer](/assets/images/share-quiz.png)
 
@@ -165,7 +165,7 @@ __Social Links__
 - Lighthouse testing score was slow. Converted photos to Webp and greatly improved score.
 - Lighthouse testing showed accessiblity was low. Added the correct amount of alt tags.
 - Got feedback that 60 seconds to do the quiz was too hard. Changed to 120 seconds.
-- Timer didn't finish after quiz ended. Hitting Play Again would cause two timers to run at the same time - This turned out to be a very complex bug. After hours of researching using StackOverFlow, MDN and Open AI, I asked Tutor Support and we finally got there after 5 hours on the chat! We had to use a workaround with reseting the timer as my timer was originally created within a function and could not be implemented globally. 
+- Timer didn't finish after quiz ended. Hitting Play Again would cause two timers to run at the same time - This turned out to be a very complex bug. After hours of researching using StackOverFlow, MDN and Open AI, I asked Tutor Support and we finally got there after 5 hours on the chat! We had to use a workaround with resetting the timer as my timer was originally created within a function and could not be implemented globally. 
 
 ### Unfixed Bugs
 
@@ -197,16 +197,16 @@ Scroll back down through the page to locate the now published site link in the "
 ### Code 
 
 - Some ideas and content were adapted from my previous project, A History of the PlayStation.
-- [MDN Web Docs](https://developer.mozilla.org/en-US/)for general debugging.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) for general debugging.
 - [W3-Schools](https://www.w3schools.com/) for some helpful tips on building quizzes in JS.
 - Some code used from course material and previous project Love Maths to build the score counter. 
-- Code to build Timer used from StackOverflow [here](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript) and [here](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/). Also credit to GEr from Tutor Support for helping me out in parts here.
+- Code to build Timer used from StackOverflow [here](https://stackoverflow.com/questions/29971898/how-to-create-an-accurate-timer-in-javascript) and [here](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) and [edureka!](https://www.edureka.co/blog/creating-an-online-quiz-application-implementing-countdown-timer/). Also credit to Ger from Tutor Support for helping me out in parts here.
 - Code from this StackOverFlow [page](https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript) used to code Display Results section in my JS.
 - Some code used from this StackOverFlow [page](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array) to pull random questions for quiz.
-- [Code Institute Sampe Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
-- Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)
+- [Code Institute Sample Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
+- Code adapted for click event found on MDN [here](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event).
 - Code adapted for Share Quiz function found [here](https://dev.to/kunaal438/how-to-make-a-share-button-html-awesome-button-effect-css-modern-web-coding-tutorial-2app) on Dev.to.
-- Touch functionlaity added from Codeburst [here](https://codeburst.io/the-only-way-to-detect-touch-with-javascript-7791a3346685) and StackOverFlow [here](https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript)
+- Touch functionlaity added from Codeburst [here](https://codeburst.io/the-only-way-to-detect-touch-with-javascript-7791a3346685) and StackOverFlow [here](https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript).
 - Code adapted from MDN [here](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp) to add copy button.
 - Code adapted from StackOverFlow to hide buttons found [here](https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript).
 - Advice, help and guidance for my whole project from my mentor Tim and my partner Steph. 
@@ -215,4 +215,3 @@ Scroll back down through the page to locate the now published site link in the "
 
 - Massive thank you to my partner Steph! She was a constant source of advice, debugging and ideas. She is also the most patient person to ever exist.
 - My mentor Tim for giving me great guidance and advice and JJ for his review! 
- 
